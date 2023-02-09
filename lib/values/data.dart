@@ -53,15 +53,19 @@ class Data {
   static List<SkillLevelData> skillLevelData = [
     SkillLevelData(
       skill: StringConst.SKILLS_1,
-      level: 80,
-    ),
-    SkillLevelData(
-      skill: StringConst.SKILLS_2,
       level: 90,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_3,
+      skill: StringConst.SKILLS_2,
       level: 70,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_3,
+      level: 90,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_4,
+      level: 80,
     ),
   ];
 
@@ -70,11 +74,7 @@ class Data {
       title: StringConst.SKILLS_1,
       description: StringConst.SKILLS_1_DESC,
       iconData: FontAwesomeIcons.compress,
-    ),
-    SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+    ), //not being used
     SkillCardData(
       title: StringConst.SKILLS_2,
       description: StringConst.SKILLS_2_DESC,
@@ -90,24 +90,21 @@ class Data {
       description: StringConst.SKILLS_4_DESC,
       iconData: FontAwesomeIcons.recordVinyl,
     ),
-    SkillCardData(
-        title: "",
-        description: "",
-        iconData: Icons.pages_outlined), //not being used
+    //not being used
   ];
   static List<StatItemData> statItemsData = [
-    StatItemData(value: 120, subtitle: StringConst.HAPPY_CLIENTS),
-    StatItemData(value: 10, subtitle: StringConst.YEARS_OF_EXPERIENCE),
-    StatItemData(value: 230, subtitle: StringConst.INCREDIBLE_PROJECTS),
-    StatItemData(value: 18, subtitle: StringConst.AWARD_WINNING),
+    StatItemData(value: StringConst.HAPPY_CLIENTS_NUM, subtitle: StringConst.HAPPY_CLIENTS),
+    StatItemData(value: StringConst.YEARS_OF_EXPERIENCE_NUM, subtitle: StringConst.YEARS_OF_EXPERIENCE),
+    StatItemData(value: StringConst.INCREDIBLE_PROJECTS_NUM, subtitle: StringConst.INCREDIBLE_PROJECTS),
+    // StatItemData(value: 18, subtitle: StringConst.AWARD_WINNING),
   ];
 
   static List<ProjectCategoryData> projectCategories = [
-    ProjectCategoryData(title: StringConst.ALL, number: 6, isSelected: true),
-    ProjectCategoryData(title: StringConst.BRANDING, number: 1),
-    ProjectCategoryData(title: StringConst.PACKAGING, number: 1),
-    ProjectCategoryData(title: StringConst.PHOTOGRAPHER, number: 2),
-    ProjectCategoryData(title: StringConst.WEB_DESIGN, number: 3),
+    ProjectCategoryData(title: StringConst.ALL, number: 8, isSelected: true),
+    ProjectCategoryData(title: StringConst.ECOMMERCE, number: 2),
+    ProjectCategoryData(title: StringConst.HEALTH_CARE, number: 1),
+    ProjectCategoryData(title: StringConst.FMS, number: 2),
+    ProjectCategoryData(title: StringConst.ACCOUNTS, number: 2),
   ];
 
   static List<String> awards1 = [
@@ -175,93 +172,108 @@ class Data {
   static List<ProjectData> allProjects = [
     ProjectData(
       title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ECOMMERCE,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
       width: 0.5,
       mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.ECOMMERCE,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.225,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
+      category: StringConst.ACCOUNTS,
       projectCoverUrl: ImagePath.PORTFOLIO_3,
       width: 0.225,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
+      category: StringConst.FMS,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
       width: 0.2375,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
+      category: StringConst.INVENTORY,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
       width: 0.2375,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ACCOUNTS,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
       width: 0.475,
       mobileHeight: 0.3,
     ),
-  ];
-  static List<ProjectData> branding = [
     ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.BRANDING,
-      projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
+      title: StringConst.PORTFOLIO_7_TITLE,
+      category: StringConst.FMS,
+      projectCoverUrl: ImagePath.PORTFOLIO_7,
+      width: 0.475,
+      mobileHeight: 0.3,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_8_TITLE,
+      category: StringConst.HEALTH_CARE,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.475,
+      mobileHeight: 0.3,
     ),
   ];
-  static List<ProjectData> packaging = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
-      projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
-    ),
-  ];
-  static List<ProjectData> photograhy = [
+  static List<ProjectData> eccommerce = [
     ProjectData(
       title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.PHOTOGRAPHY,
+      category: StringConst.ECOMMERCE,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
-      width: 0.5,
-      mobileHeight: 0.3,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.PHOTOGRAPHY,
-      projectCoverUrl: ImagePath.PORTFOLIO_6,
-      width: 0.475,
-      mobileHeight: 0.3,
-    ),
-  ];
-  static List<ProjectData> webDesign = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.225,
     ),
     ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.WEB_DESIGN,
-      projectCoverUrl: ImagePath.PORTFOLIO_4,
+      title: StringConst.PORTFOLIO_2_TITLE,
+      category: StringConst.ECOMMERCE,
+      projectCoverUrl: ImagePath.PORTFOLIO_2,
+      width: 0.225,
+    ),
+  ];
+  static List<ProjectData> health = [
+    ProjectData(
+      title: StringConst.PORTFOLIO_8_TITLE,
+      category: StringConst.HEALTH_CARE,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
       width: 0.2375,
     ),
+  ];
+  static List<ProjectData> inventory = [
     ProjectData(
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PACKAGING,
+      category: StringConst.INVENTORY,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
+      width: 0.5,
+      mobileHeight: 0.3,
+    ),
+  ];
+  static List<ProjectData> accounts = [
+    ProjectData(
+      title: StringConst.PORTFOLIO_3_TITLE,
+      category: StringConst.ACCOUNTS,
+      projectCoverUrl: ImagePath.PORTFOLIO_3,
+      width: 0.225,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_6_TITLE,
+      category: StringConst.ACCOUNTS,
+      projectCoverUrl: ImagePath.PORTFOLIO_6,
+      width: 0.225,
+    ),
+  ];
+  static List<ProjectData> fms = [
+    ProjectData(
+      title: StringConst.PORTFOLIO_4_TITLE,
+      category: StringConst.FMS,
+      projectCoverUrl: ImagePath.PORTFOLIO_4,
+      width: 0.225,
     ),
   ];
 }

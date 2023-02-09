@@ -1,11 +1,11 @@
 {
-    "name": "Nimbus CV",
-    "short_name": "Nimbus CV",
+    "name": "Shahul CV",
+    "short_name": "Shahul CV",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A Beautifully engineered portfolio website built with flutter.",
+    "description": "A Well skilled mobile developer portfolio website.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

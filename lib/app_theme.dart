@@ -12,23 +12,19 @@ class AppTheme {
 
   static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
     return ThemeData(
-      colorScheme: colorScheme,
       textTheme: _textTheme,
       iconTheme: IconThemeData(color: AppColors.white),
       canvasColor: colorScheme.background,
       scaffoldBackgroundColor: colorScheme.background,
       highlightColor: Colors.transparent,
-      accentColor: colorScheme.primary,
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      focusColor: AppColors.primaryColor,
+      focusColor: AppColors.primaryColor, colorScheme: colorScheme.copyWith(secondary: colorScheme.primary),
     );
   }
 
   static const ColorScheme lightColorScheme = ColorScheme(
     primary: AppColors.primaryColor,
-    primaryVariant: AppColors.secondaryColor,
     secondary: AppColors.primaryColor,
-    secondaryVariant: AppColors.primaryColor,
     background: Colors.white,
     surface: Color(0xFFFAFBFB),
     onBackground: AppColors.primaryColor,

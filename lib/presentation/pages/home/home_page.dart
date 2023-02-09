@@ -44,8 +44,8 @@ class _HomePageState extends State<HomePage>
     NavItemData(name: StringConst.ABOUT, key: GlobalKey()),
     NavItemData(name: StringConst.SKILLS, key: GlobalKey()),
     NavItemData(name: StringConst.PROJECTS, key: GlobalKey()),
-    NavItemData(name: StringConst.AWARDS, key: GlobalKey()),
-    NavItemData(name: StringConst.BLOG, key: GlobalKey()),
+    // NavItemData(name: StringConst.AWARDS, key: GlobalKey()),
+    // NavItemData(name: StringConst.BLOG, key: GlobalKey()),
   ];
 
   @override
@@ -181,28 +181,28 @@ class _HomePageState extends State<HomePage>
                     ],
                   ),
                   SizedBox(height: spacerHeight),
-                  Stack(
-                    children: [
-                      Positioned(
-                        left: -assignWidth(context, 0.6),
-                        child: Image.asset(ImagePath.BLOB_ASH),
-                      ),
-                      Column(
-                        children: [
-                          Container(
-                            key: navItems[4].key,
-                            child: AwardsSection(),
-                          ),
-                          SpaceH40(),
-                          Container(
-                            key: navItems[5].key,
-                            child: BlogSection(),
-                          ),
-                          FooterSection(),
-                        ],
-                      )
-                    ],
-                  ),
+                  // Stack(
+                  //   children: [
+                  //     Positioned(
+                  //       left: -assignWidth(context, 0.6),
+                  //       child: Image.asset(ImagePath.BLOB_ASH),
+                  //     ),
+                  //     Column(
+                  //       children: [
+                  //         Container(
+                  //           key: navItems[4].key,
+                  //           child: AwardsSection(),
+                  //         ),
+                  //         SpaceH40(),
+                  //         Container(
+                  //           key: navItems[5].key,
+                  //           child: BlogSection(),
+                  //         ),
+                  //         FooterSection(),
+                  //       ],
+                  //     )
+                  //   ],
+                  // ),
                 ],
               ),
             ),

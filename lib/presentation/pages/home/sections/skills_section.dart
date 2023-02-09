@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:nimbus/presentation/layout/adaptive.dart';
 import 'package:nimbus/presentation/widgets/content_area.dart';
 import 'package:nimbus/presentation/widgets/nimbus_info_section.dart';
@@ -182,8 +181,10 @@ class _SkillsSectionState extends State<SkillsSection>
     double invisibleBoxHeight = responsiveSize(context, 0, 10, md: 10, sm: 10);
 
     return Container(
-      child: StaggeredGridView.countBuilder(
-        crossAxisCount: crossAxisCount,
+      child: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: crossAxisCount,
+          mainAxisSpacing: kMainAxisSpacing,crossAxisSpacing: kCrossAxisSpacing
+        ),
         itemCount: Data.skillCardData.length,
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
@@ -199,15 +200,13 @@ class _SkillsSectionState extends State<SkillsSection>
             );
           }
         },
-        staggeredTileBuilder: (int index) {
-          if (index == 1 || index == 5) {
-            return StaggeredTile.extent(1, invisibleBoxHeight);
-          } else {
-            return StaggeredTile.extent(1, boxHeight);
-          }
-        },
-        mainAxisSpacing: kMainAxisSpacing,
-        crossAxisSpacing: kCrossAxisSpacing,
+        // staggeredTileBuilder: (int index) {
+        //   if (index == 1 || index == 5) {
+        //     return StaggeredTile.extent(1, invisibleBoxHeight);
+        //   } else {
+        //     return StaggeredTile.extent(1, boxHeight);
+        //   }
+        // },
       ),
     );
   }

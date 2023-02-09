@@ -143,7 +143,7 @@ List<Widget> buildCardRow({
             ),
           ),
         ),
-        subtitle: Flexible(
+        subtitle: Expanded(
           child: SelectableText(
             data[index].subtitle,
             style: textTheme.bodyText1?.copyWith(

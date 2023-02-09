@@ -30,7 +30,7 @@ class ImagePath {
   static const String DEV_ABOUT_ME = "$imageDir/dev_aboutme.png";
   static const String DEV_HEADER = "$imageDir/dev_header.png";
   static const String DEV_AWARD = "$imageDir/dev_award.png";
-  static const String GHANA_FLAG = "$imageDir/ghana_flag.png";
+  static const String GHANA_FLAG = "$imageDir/india.png";
 
   // Blog Images
   static const String BLOG_01 = "$imageDir/blog_01.jpg";
@@ -41,7 +41,9 @@ class ImagePath {
   static const String PORTFOLIO_1 = "$imageDir/portfolio_01.jpg";
   static const String PORTFOLIO_2 = "$imageDir/portfolio_02.jpg";
   static const String PORTFOLIO_3 = "$imageDir/portfolio_03.jpg";
-  static const String PORTFOLIO_4 = "$imageDir/portfolio_04.jpg";
+  static const String PORTFOLIO_4 = "$imageDir/portfolio_04.png";
   static const String PORTFOLIO_5 = "$imageDir/portfolio_05.jpg";
   static const String PORTFOLIO_6 = "$imageDir/portfolio_06.jpg";
+  static const String PORTFOLIO_7 = "$imageDir/portfolio_07.jpg";
+  static const String PORTFOLIO_8 = "$imageDir/portfolio_08.jpg";
 }

@@ -37,10 +37,11 @@ class _ProjectsSectionState extends State<ProjectsSection>
   late Animation<double> _projectScaleAnimation;
   List<List<ProjectData>> projects = [
     Data.allProjects,
-    Data.branding,
-    Data.packaging,
-    Data.photograhy,
-    Data.webDesign,
+    Data.eccommerce,
+    Data.health,
+    Data.inventory,
+    Data.accounts,
+    Data.fms,
   ];
   late List<ProjectData> selectedProject;
   late List<ProjectCategoryData> projectCategories;
