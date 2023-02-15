@@ -9,6 +9,11 @@ class ImagePath {
   static const String LOGO_DARK = "$imageDir/logo_dark.png";
   static const String LOGO_LIGHT = "$imageDir/logo_light.png";
 
+  //profile logo
+  static const String FLUTTER_DEV = "$imageDir/frontend_Dev.png";
+  static const String API_DEV = "$imageDir/backend_dev.png";
+  static const String FREELANCER = "$imageDir/freelancer.png";
+
   // Blobs
   static const String BLOB_ASH = "$imageDir/blob_ash.png";
   static const String BLOB_BEAN_ASH = "$imageDir/blob_bean_ash.png";
@@ -44,6 +49,6 @@ class ImagePath {
   static const String PORTFOLIO_4 = "$imageDir/portfolio_04.png";
   static const String PORTFOLIO_5 = "$imageDir/portfolio_05.jpg";
   static const String PORTFOLIO_6 = "$imageDir/portfolio_06.jpg";
-  static const String PORTFOLIO_7 = "$imageDir/portfolio_07.jpg";
+  static const String PORTFOLIO_7 = "$imageDir/portfolio_07.jpeg";
   static const String PORTFOLIO_8 = "$imageDir/portfolio_08.jpg";
 }

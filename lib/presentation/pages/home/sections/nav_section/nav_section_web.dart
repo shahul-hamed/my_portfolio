@@ -34,8 +34,10 @@ class NavSectionWeb extends StatefulWidget {
 }
 
 class _NavSectionWebState extends State<NavSectionWeb> {
+
   @override
   Widget build(BuildContext context) {
+    TextTheme textTheme = Theme.of(context).textTheme;
     double logoSpaceLeft =
         responsiveSize(context, logoSpaceLeftSm, logoSpaceLeftLg);
     double logoSpaceRight =
@@ -74,13 +76,23 @@ class _NavSectionWebState extends State<NavSectionWeb> {
         child: Row(
           children: [
             SizedBox(width: logoSpaceLeft),
+            // Image.asset(
+            //   ImagePath.LOGO_LIGHT,
+            //   height: Sizes.HEIGHT_52,
+            // ),
+            // SizedBox(width: 10),
             InkWell(
               onTap: () {},
-              child: Image.asset(
-                ImagePath.LOGO_DARK,
-                height: Sizes.HEIGHT_52,
-              ),
+              child: Text(StringConst.BIO,style: textTheme.titleMedium?.copyWith(
+                color: AppColors.primaryColor,
+                  fontSize: responsiveSize(
+                    context,
+                    Sizes.TEXT_SIZE_16,
+                    Sizes.TEXT_SIZE_18,
+                  ),))
+
             ),
+
             SizedBox(width: logoSpaceRight),
             NimbusVerticalDivider(),
             Spacer(flex: 1),
@@ -106,8 +118,9 @@ class _NavSectionWebState extends State<NavSectionWeb> {
             SizedBox(width: contactBtnSpaceLeft),
              NimbusButton(
               buttonTitle: StringConst.CONTACT_ME,
+              buttonColor: AppColors.yellow,
               width: contactBtnWidth,
-              // onPressed: () => openUrlLink(StringConst.EMAIL_URL),
+              onPressed: () => openUrlLink(StringConst.EMAIL_URL),
               opensUrl: true,
               url: StringConst.EMAIL_URL,
             ),

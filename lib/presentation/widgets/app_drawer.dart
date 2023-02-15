@@ -17,7 +17,7 @@ class AppDrawer extends StatefulWidget {
   final GestureTapCallback? onClose;
 
   AppDrawer({
-    this.color = AppColors.black200,
+    this.color = AppColors.white,
     this.width,
     required this.menuList,
     this.onClose,
@@ -57,6 +57,8 @@ class _AppDrawerState extends State<AppDrawer> {
                       height: Sizes.HEIGHT_52,
                     ),
                   ),
+                  SizedBox(width: Sizes.WIDTH_10,),
+                  Text(StringConst.FULL_NAME,style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold,color:AppColors.primaryColor),),
                   Spacer(),
                   InkWell(
                     onTap: widget.onClose ?? () => _closeDrawer(),
@@ -98,9 +100,9 @@ class _AppDrawerState extends State<AppDrawer> {
           title: menuList[i].name,
           isMobile: true,
           isSelected: menuList[i].isSelected,
-          titleStyle: textTheme.bodyText1?.copyWith(
+          titleStyle: textTheme.bodyLarge?.copyWith(
             color:
-                menuList[i].isSelected ? AppColors.primary200 : AppColors.white,
+                menuList[i].isSelected ? AppColors.primaryColor : AppColors.black,
             fontSize: Sizes.TEXT_SIZE_16,
             fontWeight:
                 menuList[i].isSelected ? FontWeight.bold : FontWeight.normal,
@@ -135,7 +137,7 @@ class _AppDrawerState extends State<AppDrawer> {
 
   Widget _buildFooterText() {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? footerTextStyle = textTheme.caption?.copyWith(
+    TextStyle? footerTextStyle = textTheme.bodySmall?.copyWith(
       color: AppColors.primaryText2,
       fontWeight: FontWeight.bold,
     );
@@ -147,17 +149,6 @@ class _AppDrawerState extends State<AppDrawer> {
             TextSpan(
               text: StringConst.RIGHTS_RESERVED + " ",
               style: footerTextStyle,
-              children: [
-                TextSpan(text: StringConst.DESIGNED_BY + " "),
-                TextSpan(
-                  text: StringConst.WEB_GENIUS_LAB,
-                  style: footerTextStyle?.copyWith(
-                    decoration: TextDecoration.underline,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.white,
-                  ),
-                ),
-              ],
             ),
             textAlign: TextAlign.center,
           ),
@@ -175,7 +166,7 @@ class _AppDrawerState extends State<AppDrawer> {
                     style: footerTextStyle?.copyWith(
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.w900,
-                      color: AppColors.white,
+                      color: AppColors.black,
                     ),
                   ),
                 ],

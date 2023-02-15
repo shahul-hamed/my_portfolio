@@ -110,9 +110,9 @@ List<Widget> buildCardRow({
   );
   double trailingIconSize = responsiveSize(
     context,
-    Sizes.ICON_SIZE_28,
-    Sizes.ICON_SIZE_30,
-    md: Sizes.ICON_SIZE_30,
+    Sizes.ICON_SIZE_36,
+    Sizes.ICON_SIZE_40,
+    md: Sizes.ICON_SIZE_40,
   );
   for (int index = 0; index < data.length; index++) {
     items.add(
@@ -121,7 +121,7 @@ List<Widget> buildCardRow({
         height: responsiveSize(
           context,
           125,
-          140,
+          135,
         ),
         hasAnimation: hasAnimation,
         leading: CircularContainer(
@@ -131,33 +131,28 @@ List<Widget> buildCardRow({
           backgroundColor: data[index].circleBgColor,
           iconColor: data[index].leadingIconColor,
         ),
-        title: Flexible(
-          child: SelectableText(
-            data[index].title,
-            style: textTheme.subtitle1?.copyWith(
-              fontSize: responsiveSize(
-                context,
-                Sizes.TEXT_SIZE_16,
-                Sizes.TEXT_SIZE_18,
-              ),
+        title: SelectableText(
+          data[index].title,
+          style: textTheme.titleMedium?.copyWith(
+            fontSize: responsiveSize(
+              context,
+              Sizes.TEXT_SIZE_16,
+              Sizes.TEXT_SIZE_18,
             ),
           ),
         ),
-        subtitle: Expanded(
-          child: SelectableText(
-            data[index].subtitle,
-            style: textTheme.bodyText1?.copyWith(
-                fontSize: responsiveSize(
-              context,
-              Sizes.TEXT_SIZE_14,
-              Sizes.TEXT_SIZE_16,
-            )),
-          ),
+        subtitle: SelectableText(
+          data[index].subtitle,
+          style: textTheme.bodyLarge?.copyWith(
+              fontSize: responsiveSize(
+            context,
+            Sizes.TEXT_SIZE_13,
+            Sizes.TEXT_SIZE_15,
+          )),
         ),
-        trailing: Icon(
-          Icons.chevron_right,
-          size: trailingIconSize,
-          color: data[index].trailingIconColor,
+        trailing: Image.asset(
+          data[index].trailingImage,
+          width: trailingIconSize,
         ),
       ),
     );

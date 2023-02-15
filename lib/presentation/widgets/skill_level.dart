@@ -20,7 +20,7 @@ class SkillLevel extends StatefulWidget {
     required this.controller,
     this.skillStyle,
     this.levelStyle,
-    this.skillLevelColor = AppColors.yellow300,
+    this.skillLevelColor = AppColors.yellow,
     this.baseColor = AppColors.grey100,
     this.skillLevelWidth = 100,
     this.baseThickness = 2.0,
@@ -71,7 +71,7 @@ class _SkillLevelState extends State<SkillLevel> {
 
   Widget _buildChild(double level) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? defaultStyle = textTheme.subtitle2;
+    TextStyle? defaultStyle = textTheme.titleSmall;
     return Container(
       width: widget.skillLevelWidth,
       child: Column(

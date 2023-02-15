@@ -6,6 +6,7 @@ import 'package:nimbus/values/values.dart';
 class NimBusCardData {
   IconData leadingIcon;
   IconData trailingIcon;
+  String trailingImage;
   Color trailingIconColor;
   Color leadingIconColor;
   Color circleBgColor;
@@ -15,6 +16,7 @@ class NimBusCardData {
   NimBusCardData({
     required this.leadingIcon,
     required this.trailingIcon,
+     this.trailingImage="",
     this.circleBgColor = AppColors.black,
     this.leadingIconColor = AppColors.white,
     this.trailingIconColor = AppColors.grey300,
@@ -40,8 +42,8 @@ class NimBusCard extends StatefulWidget {
     this.hasAnimation = true,
     this.borderRadius = const BorderRadius.all(Radius.circular(12)),
     this.padding = const EdgeInsets.symmetric(
-      horizontal: Sizes.PADDING_0,
-      vertical: Sizes.PADDING_12,
+      horizontal: Sizes.PADDING_14,
+      vertical: Sizes.PADDING_14,
     ),
   });
 
@@ -132,25 +134,18 @@ class _NimBusCardState extends State<NimBusCard>
               mainAxisAlignment: widget.rowMainAxisAlignment,
               crossAxisAlignment: widget.rowCrossAxisAlignment,
               children: [
-                widget.leading != null ? Spacer() : Empty(),
-                widget.leading ?? Empty(),
-                widget.leading != null ? Spacer() : Empty(),
                 Expanded(flex: 7,
-                  child: Column(
-                    mainAxisAlignment: widget.columnMainAxisAlignment,
-                    crossAxisAlignment: widget.columnCrossAxisAlignment,
-                    children: [
-                      Spacer(),
-                      widget.title ?? Empty(),
-                      widget.title != null ? SpaceH8() : Empty(),
-                      widget.subtitle ?? Empty(),
-                      Spacer(),
-                    ],
-                  ),
-                ),
-                widget.trailing != null ? Spacer() : Empty(),
-                Expanded(flex:2,child: widget.trailing ?? Empty()),
-                widget.trailing != null ? Spacer() : Empty(),
+                    child: Column(
+                      crossAxisAlignment: widget.columnCrossAxisAlignment,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    widget.title ?? Empty(),
+                    widget.title != null ? SpaceH8() : Empty(),
+                    widget.subtitle ?? Empty(),
+
+                  ],
+                )),
+                Expanded(flex:2,child:widget.trailing ?? Empty(), )
               ],
             ),
           ),

@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:nimbus/presentation/layout/adaptive.dart';
@@ -5,6 +7,7 @@ import 'package:nimbus/presentation/pages/home/sections/header_section/widgets.d
 import 'package:nimbus/presentation/widgets/buttons/nimbus_button.dart';
 import 'package:nimbus/presentation/widgets/content_area.dart';
 import 'package:nimbus/presentation/widgets/spaces.dart';
+import 'package:nimbus/utils/functions.dart';
 import 'package:nimbus/values/values.dart';
 
 const double bodyTextSizeLg = 16.0;
@@ -53,9 +56,9 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
     double screenWidth = widthOfScreen(context) - (sidePadding * 2);
     double contentAreaWidth = screenWidth;
     TextStyle? bodyTextStyle =
-        textTheme.bodyText1?.copyWith(fontSize: bodyTextSizeSm);
+        textTheme.bodyLarge?.copyWith(fontSize: bodyTextSizeSm);
     TextStyle? socialTitleStyle =
-        textTheme.subtitle1?.copyWith(fontSize: socialTextSizeSm);
+        textTheme.titleMedium?.copyWith(fontSize: socialTextSizeSm);
 
     double buttonWidth = 80;
     double buttonHeight = 48;
@@ -119,7 +122,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                     margin: EdgeInsets.only(top: heightOfStack * 0.1),
                     child: SelectableText(
                       StringConst.FIRST_NAME,
-                      style: textTheme.headline1?.copyWith(
+                      style: textTheme.displayLarge?.copyWith(
                         color: AppColors.grey50,
                         fontSize: headerIntroTextSize * 2.5,
                       ),
@@ -144,7 +147,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                   TypewriterAnimatedText(
                                     StringConst.INTRO,
                                     speed: Duration(milliseconds: 60),
-                                    textStyle: textTheme.headline2?.copyWith(
+                                    textStyle: textTheme.displayMedium?.copyWith(
                                       fontSize: headerIntroTextSize,
                                     ),
                                   ),
@@ -162,7 +165,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                   TypewriterAnimatedText(
                                     StringConst.POSITION,
                                     speed: Duration(milliseconds: 80),
-                                    textStyle: textTheme.headline2?.copyWith(
+                                    textStyle: textTheme.displayMedium?.copyWith(
                                       fontSize: headerIntroTextSize,
                                       color: AppColors.primaryColor,
                                       height: 1.2,
@@ -226,16 +229,21 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                               children: [
                                 NimbusButton(
                                   width: buttonWidth,
-                                  height: buttonHeight,
+                                  height: buttonHeight,buttonColor: AppColors.primaryColor,
                                   buttonTitle: StringConst.DOWNLOAD_CV,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    window.open("assets/my_resume.pdf", "text");
+                                  },
                                 ),
                                 SpaceW16(),
                                 NimbusButton(
                                   width: buttonWidth,
                                   height: buttonHeight,
+                                  buttonColor: AppColors.yellow,
                                   buttonTitle: StringConst.HIRE_ME_NOW,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    openUrlLink(StringConst.EMAIL_URL);
+                                  },
                                 ),
                                 // NimBusButtonLink(
                                 //   width: buttonWidth,

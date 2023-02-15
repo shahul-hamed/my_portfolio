@@ -7,7 +7,6 @@ class StringConst {
   //Nav Section
   static const String NAME_ABBREV = "CA";
   static const String HOME = "Home";
-  static const String SERVICES = "Services";
   static const String ABOUT = "About";
   static const String PROJECTS = "Projects";
   static const String AWARDS = "Awards";
@@ -21,26 +20,28 @@ class StringConst {
 
   //Header Section
   static const String FIRST_NAME = "Shahul";
+  static const String FULL_NAME = "Shahul hameed J";
   static const String INTRO = "Hi! I'm Shahul hameed -";
   static const String POSITION = "Flutter Developer";
+  static const String BIO = "Flutter | Golang | Jenkins";
   static const String ABOUT_DEV =
-      "Senior flutter developer working in mobile app development field for 3 years so far, specialized in Software development, Rest API creations and Test automation.";
+      "Senior flutter developer working in mobile app development field for 3+ years so far, specialized in Software development, Rest API creations and Test automation.";
   static const String ABOUT_ME_1 =
       "Senior flutter developer working in mobile app development field for";
   static const String ABOUT_ME_2 =
-      "3 years so far, specialized in Software development, Rest API creations and Test automation.";
+      "3+ years so far, specialized in Software development, Rest API creations and Test automation.";
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
   static const String DEV_EMAIL_2 = "shahul5.it@mail.com";
   static const String BEHANCE = "linkedin";
   static const String BEHANCE_ID = "www.linkedin.com/in/shahul-hameed-j-b76879220";
   static const String HIRE_ME_NOW = "Hire Me Now";
-  static const String UI_UX = "Flutter Developer";
-  static const String UI_UX_DESC = "creative mobile apps for you";
-  static const String PHOTOGRAPHER = "Golang Developer";
-  static const String PHOTOGRAPHER_DESC = "Creating simple REST API";
+  static const String UI = "Flutter Developer";
+  static const String UI_DESC = "Creative mobile apps with well designed UI for you";
+  static const String BACKEND_DEV = "Golang Developer";
+  static const String BACKEND_DEV_DESC = "Able to create simple REST API using Go";
   static const String FREELANCER = "Freelancer";
-  static const String FREELANCER_DESC = "You can hire me now";
+  static const String FREELANCER_DESC = "You can hire me now as a freelancer";
 
   static const String DART = "Dart";
   static const String ANGULAR_DART = "AngularDart";
@@ -54,21 +55,13 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Product Designer and Digital Creative Director working in design field for 13 years so far, specialized in UI/UX, Branding and digital designs. These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful. beautifully, too.";
-  static const String ABOUT_ME_DESC_1 =
-      "Product Designer and Digital Creative Director working in design ";
-  static const String ABOUT_ME_DESC_2 =
-      "field for 13 years so far, specialized in UI/UX, Branding and digital";
-  static const String ABOUT_ME_DESC_3 =
-      "designs. These are the words we live by in everything we do. Every";
-  static const String ABOUT_ME_DESC_4 =
-      "story we tell, every brand we build, and every interaction we";
-  static const String ABOUT_ME_DESC_5 =
-      "create must not only look beautiful. beautifully, too.";
-  static const String CREATIVE_DESIGN = "Need Creative Design?";
+      "Flutter developer with 3+ years of experience facilitating effective engineering solutions with a wide range of e-commerce applications , Inventory management , Knowledge in social media application development and technology skills. Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of rest API development and its integration approaches. Having knowledge in flutter testing and app automation. Currently working on the Pshycocare online application.";
+
+  static const String CREATIVE_DESIGN = "Need Mobile application with Innovative UI?";
   static const String HELP = "I can Help You!";
   static const String FOLLOW_ME_1 = "You can also follow me here:";
   static const String DRIBBLE = "Dribble";
+  static const String GITHUB = "GitHub";
   static const String INSTA = "Insta";
 
   //Skills Section
@@ -83,18 +76,21 @@ class StringConst {
   static const String TOOLS_2_PROFICIENCY = "90%";
   static const String TOOLS_3_NAME = "Sketch";
   static const String TOOLS_3_PROFICIENCY = "70%";
-  static const String SKILLS_1 = "Creative UI Design";
+  static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
-      "We believe direct collaboration with our clients is essential to bringing unique";
-  static const String SKILLS_2 = "User friendly \nworkflow";
+      "Having well knowledge in mobile app development using flutter";
+  static const String SKILLS_2 = "AngularDart";
   static const String SKILLS_2_DESC =
-      "I believe the way of application UI representing is very important";
-  static const String SKILLS_3 = "Code usability";
+      "Worked on the ecommerce web application using angulardart";
+  static const String SKILLS_3 = "CodeIgniter";
   static const String SKILLS_3_DESC =
-      "I can maintain the common functionalities and services entire the application";
-  static const String SKILLS_4 = "Well knowledge in \nBusiness logic";
+      "2 years back worked on the delivery site using codeigniter";
+  static const String SKILLS_4 = "Firebase";
   static const String SKILLS_4_DESC =
-      "Based on the project requirement I will structure the flow and analyze the logic thoroughly.";
+      "Used firebase for FCM notifications and authentication also";
+  static const String SKILLS_5 = "CICD pipeline";
+  static const String SKILLS_5_DESC =
+      "Know the flutter app automation using Jenkins";
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
@@ -110,7 +106,7 @@ class StringConst {
   static const String MEET_MY_PROJECTS = "Meet My Projects";
   static const String MY_WORKS = "my works";
   static const String PROJECTS_DESC =
-      "Product Designer and Digital Creative Director working in design field for 13 years so far, specialized in UI/UX, Branding and digital designs. These are the words we live by in everything we do.";
+      "I had worked on the Ecommerce mobile and web applications, Having work experience in Inventory management applications and Employee management: task management and Leave management are the important features in that project.As a freelancer I have been working in a few more applications, latest projects are related to Accounts & trading and Employee attendance and activity tracking oriented. Finally, Im working on the health care ( Providing physical activity to improve the patients mental strength and tracking of emotions of patients ) related project . Projects profile following on";
   static const String ALL_PROJECTS = "All Projects";
   static const String ALL = "All";
   static const String ECOMMERCE = "Ecommerce";
@@ -198,11 +194,11 @@ class StringConst {
 
   //URL Links
   static const String WEB_GENIUS_LAB_URL = "https://webgeniuslab.net/";
-  static const String BEHANCE_URL = "https://www.behance.net/";
+  static const String BEHANCE_URL = "https://www.linkedin.com/";
   static const String DRIBBLE_URL = "https://dribbble.com/";
   static const String LINKED_IN_URL = "https:linkedin.com/in/";
   static const String INSTAGRAM_URL = "https://www.instagram.com/";
-  static const String GITHUB_URL = "https://github.com/";
+  static const String GITHUB_URL = "https://github.com/shahul-hamed/";
   static const String FACEBOOK_URL = "https://facebook.com/";
   static const String TWITTER_URL = "http://twitter.com/";
   static const String DAVID_LEGEND_URL = "https://davidcobbina.com/#/";

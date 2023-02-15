@@ -59,7 +59,7 @@ class _StatisticsSectionState extends State<StatisticsSection>
               Radius.circular(Sizes.RADIUS_10),
             ),
           ),
-          color: AppColors.black400,
+          color: AppColors.white,
           child: ResponsiveBuilder(
             refinedBreakpoints: RefinedBreakpoints(),
             builder: (context, sizingInformation) {
@@ -92,17 +92,19 @@ class _StatisticsSectionState extends State<StatisticsSection>
                         left: -50,
                         child: Image.asset(
                           ImagePath.BOX_COVER_GOLD,
+                          color: AppColors.yellow,
                           height: 200,
                         ),
                       ),
-                      Positioned(
-                        right: -25,
-                        bottom: -25,
-                        child: Image.asset(
-                          ImagePath.BOX_COVER_BLACK,
-                          height: 200,
-                        ),
-                      ),
+                      // Positioned(
+                      //   right: -25,
+                      //   bottom: -25,
+                      //   child: Image.asset(
+                      //     ImagePath.BOX_COVER_BLACK,
+                      //     height: 200,
+                      //
+                      //   ),
+                      // ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: Sizes.PADDING_40),
@@ -158,8 +160,8 @@ class StatItem extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.controller,
-    this.titleColor = AppColors.white,
-    this.subtitleColor = AppColors.grey150,
+    this.titleColor = AppColors.black,
+    this.subtitleColor = AppColors.grey350,
     this.titleStyle,
     this.subtitleStyle,
     this.curve = Curves.easeIn,
@@ -204,7 +206,7 @@ class StatItem extends StatelessWidget {
         Text(
           "$value",
           style: titleStyle ??
-              textTheme.headline3?.copyWith(
+              textTheme.displaySmall?.copyWith(
                 color: titleColor,
               ),
         ),
@@ -212,7 +214,7 @@ class StatItem extends StatelessWidget {
         Text(
           subtitle,
           style: subtitleStyle ??
-              textTheme.bodyText1?.copyWith(
+              textTheme.bodyLarge?.copyWith(
                 color: subtitleColor,
                 fontSize: 16,
               ),

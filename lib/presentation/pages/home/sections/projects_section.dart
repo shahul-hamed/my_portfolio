@@ -50,6 +50,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
   void initState() {
     super.initState();
     selectedProject = projects[0];
+    print("testdata${selectedProject.length}");
     projectCategories = Data.projectCategories;
     _projectController = AnimationController(
       duration: const Duration(milliseconds: 500),
@@ -225,6 +226,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
   }
 
   List<Widget> _buildProjects(List<ProjectData> data, {bool isMobile = false}) {
+    print("here${data.length}");
     List<Widget> items = [];
     for (int index = 0; index < data.length; index++) {
       items.add(
@@ -239,7 +241,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
                 : assignHeight(context, data[index].height),
             bannerHeight: isMobile
                 ? assignHeight(context, data[index].mobileHeight) / 2
-                : assignHeight(context, data[index].height) / 3,
+                : assignHeight(context, data[index].height) / 2,
             title: data[index].title,
             subtitle: data[index].category,
             imageUrl: data[index].projectCoverUrl,
@@ -339,7 +341,7 @@ class _ProjectCategoryState extends State<ProjectCategory>
                 style: widget.titleStyle?.copyWith(
                       color: colorOfCategory(),
                     ) ??
-                    textTheme.subtitle1?.copyWith(
+                    textTheme.titleMedium?.copyWith(
                       fontSize: Sizes.TEXT_SIZE_16,
                       color: colorOfCategory(),
                     ),
@@ -370,7 +372,7 @@ class _ProjectCategoryState extends State<ProjectCategory>
         style: widget.numberStyle?.copyWith(
               color: widget.hoverColor,
             ) ??
-            textTheme.subtitle1?.copyWith(
+            textTheme.titleMedium?.copyWith(
               fontSize: Sizes.TEXT_SIZE_16,
               color: widget.hoverColor,
             ),

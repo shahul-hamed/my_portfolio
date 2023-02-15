@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nimbus/presentation/layout/adaptive.dart';
-import 'package:nimbus/presentation/widgets/selected_indicator.dart';
 import 'package:nimbus/values/values.dart';
 
-import 'animated_indicator.dart';
 
-const double indicatorWidth = Sizes.WIDTH_60;
+const double indicatorWidth = Sizes.WIDTH_64;
 
 class NavItemData {
   final String name;
@@ -48,9 +46,9 @@ class _NavItemState extends State<NavItem> with SingleTickerProviderStateMixin {
     TextTheme textTheme = Theme.of(context).textTheme;
     double textSize = responsiveSize(
       context,
-      Sizes.TEXT_SIZE_14,
-      Sizes.TEXT_SIZE_16,
-      md: Sizes.TEXT_SIZE_15,
+      Sizes.TEXT_SIZE_15,
+      Sizes.TEXT_SIZE_18,
+      md: Sizes.TEXT_SIZE_16,
     );
 
     return MouseRegion(
@@ -60,27 +58,28 @@ class _NavItemState extends State<NavItem> with SingleTickerProviderStateMixin {
         onTap: widget.onTap,
         child: Stack(
           children: [
-            if (!widget.isMobile)
-              widget.isSelected
-                  ? Positioned(
-                      top: Sizes.SIZE_12,
-                      child: SelectedIndicator(
-                        width: indicatorWidth,
-                      ),
-                    )
-                  : Positioned(
-                      top: Sizes.SIZE_12,
-                      child: AnimatedHoverIndicator(
-                        isHover: _hovering,
-                        width: indicatorWidth,
-                      ),
-                    ),
+            // if (!widget.isMobile)
+            //   widget.isSelected
+            //       ? Positioned(
+            //           top: Sizes.SIZE_16,
+            //           child: SelectedIndicator(
+            //             width: indicatorWidth,height: 20,
+            //             indicatorColor: AppColors.yellow,
+            //           ),
+            //         )
+            //       : Positioned(
+            //           top: Sizes.SIZE_16,
+            //           child: AnimatedHoverIndicator(
+            //             isHover: _hovering,
+            //             width: indicatorWidth,
+            //           ),
+            //         ),
             Text(
               widget.title,
               style: widget.titleStyle ??
-                  textTheme.subtitle1?.copyWith(
+                  textTheme.titleMedium?.copyWith(
                     fontSize: textSize,
-                    color: widget.titleColor,
+                    color: widget.isSelected?AppColors.primaryColor:_hovering?AppColors.yellow:widget.titleColor,
                   ),
             ),
           ],

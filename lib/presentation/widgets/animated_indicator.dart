@@ -23,8 +23,7 @@ class AnimatedHoverIndicator extends StatelessWidget {
     return AnimatedContainer(
       width: isHover ? width : 0,
       height: height,
-      color: indicatorColor,
-      duration: duration,
+      duration: duration,decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: indicatorColor,),
       curve: curve,
     );
   }

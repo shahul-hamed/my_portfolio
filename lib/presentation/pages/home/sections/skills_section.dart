@@ -165,7 +165,6 @@ class _SkillsSectionState extends State<SkillsSection>
           skillLevelWidth: width,
           controller: _controller,
           skill: skillLevels[index].skill,
-          
           level: skillLevels[index].level,
         ),
       );
@@ -189,17 +188,14 @@ class _SkillsSectionState extends State<SkillsSection>
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
-          if (index == 1 || index == 5) {
-            return Container(color: Colors.transparent);
-          } else {
+
             return SkillCard(
               width: boxWidth,
               title: Data.skillCardData[index].title,
               description: Data.skillCardData[index].description,
               iconData: Data.skillCardData[index].iconData,
             );
-          }
-        },
+          },
         // staggeredTileBuilder: (int index) {
         //   if (index == 1 || index == 5) {
         //     return StaggeredTile.extent(1, invisibleBoxHeight);
@@ -214,18 +210,16 @@ class _SkillsSectionState extends State<SkillsSection>
   List<Widget> _buildBoxesSm(List<SkillCardData> skill) {
     List<Widget> items = [];
     for (int index = 0; index < skill.length; index++) {
-      if (index != 1 && index != 5) {
         items.add(
           SkillCard(
             width: widthOfScreen(context),
-            height: 200,
+            height: 140,
             title: skill[index].title,
             description: skill[index].description,
             iconData: skill[index].iconData,
           ),
         );
         items.add(SpaceH16());
-      }
     }
     return items;
   }

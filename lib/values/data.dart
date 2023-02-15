@@ -26,7 +26,7 @@ class Data {
   static List<SocialButton2Data> socialData2 = [
     SocialButton2Data(
       title: StringConst.BEHANCE,
-      iconData: FontAwesomeIcons.behance,
+      iconData: FontAwesomeIcons.linkedin,
       url: StringConst.BEHANCE_URL,
       titleColor: AppColors.blue300,
       buttonColor: AppColors.blue300,
@@ -48,6 +48,14 @@ class Data {
       buttonColor: AppColors.yellow300,
       iconColor: AppColors.white,
     ),
+    SocialButton2Data(
+      title: StringConst.GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
+      titleColor: AppColors.black,
+      buttonColor: AppColors.black,
+      iconColor: AppColors.white,
+    ),
   ];
 
   static List<SkillLevelData> skillLevelData = [
@@ -57,15 +65,19 @@ class Data {
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_2,
-      level: 70,
+      level: 80,
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_3,
-      level: 90,
+      level: 70,
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_4,
-      level: 80,
+      level: 85,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_5,
+      level: 70,
     ),
   ];
 
@@ -73,22 +85,27 @@ class Data {
     SkillCardData(
       title: StringConst.SKILLS_1,
       description: StringConst.SKILLS_1_DESC,
-      iconData: FontAwesomeIcons.compress,
+      iconData: FontAwesomeIcons.mobile,
     ), //not being used
     SkillCardData(
       title: StringConst.SKILLS_2,
       description: StringConst.SKILLS_2_DESC,
-      iconData: Icons.pages_outlined,
+      iconData: Icons.web,
     ),
     SkillCardData(
       title: StringConst.SKILLS_3,
       description: StringConst.SKILLS_3_DESC,
-      iconData: FontAwesomeIcons.paintBrush,
+      iconData: FontAwesomeIcons.code,
     ),
     SkillCardData(
       title: StringConst.SKILLS_4,
       description: StringConst.SKILLS_4_DESC,
-      iconData: FontAwesomeIcons.recordVinyl,
+      iconData: FontAwesomeIcons.firefox,
+    ),
+    SkillCardData(
+      title: StringConst.SKILLS_5,
+      description: StringConst.SKILLS_5_DESC,
+      iconData: FontAwesomeIcons.jenkins,
     ),
     //not being used
   ];
@@ -103,8 +120,10 @@ class Data {
     ProjectCategoryData(title: StringConst.ALL, number: 8, isSelected: true),
     ProjectCategoryData(title: StringConst.ECOMMERCE, number: 2),
     ProjectCategoryData(title: StringConst.HEALTH_CARE, number: 1),
-    ProjectCategoryData(title: StringConst.FMS, number: 2),
+    ProjectCategoryData(title: StringConst.INVENTORY, number: 1),
     ProjectCategoryData(title: StringConst.ACCOUNTS, number: 2),
+    ProjectCategoryData(title: StringConst.FMS, number: 2),
+
   ];
 
   static List<String> awards1 = [
@@ -147,17 +166,19 @@ class Data {
 
   static List<NimBusCardData> nimbusCardData = [
     NimBusCardData(
-      title: StringConst.UI_UX,
-      subtitle: StringConst.UI_UX_DESC,
+      title: StringConst.UI,
+      subtitle: StringConst.UI_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
+      trailingImage: ImagePath.FLUTTER_DEV
     ),
     NimBusCardData(
-      title: StringConst.PHOTOGRAPHER,
-      subtitle: StringConst.PHOTOGRAPHER_DESC,
+      title: StringConst.BACKEND_DEV,
+      subtitle: StringConst.BACKEND_DEV_DESC,
       leadingIcon: Icons.done,
       trailingIcon: Icons.chevron_right,
-      circleBgColor: AppColors.yellow100,
+      circleBgColor: AppColors.yellow700,
+      trailingImage: ImagePath.API_DEV
     ),
     NimBusCardData(
       title: StringConst.FREELANCER,
@@ -166,6 +187,7 @@ class Data {
       trailingIcon: Icons.chevron_right,
       leadingIconColor: AppColors.black,
       circleBgColor: AppColors.grey50,
+      trailingImage: ImagePath.FREELANCER
     ),
   ];
 
@@ -174,53 +196,53 @@ class Data {
       title: StringConst.PORTFOLIO_1_TITLE,
       category: StringConst.ECOMMERCE,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
-      width: 0.5,
-      mobileHeight: 0.3,
+      width: 0.3,
+      // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_2_TITLE,
       category: StringConst.ECOMMERCE,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
-      width: 0.225,
+      width: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_3_TITLE,
       category: StringConst.ACCOUNTS,
       projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
+      width: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_4_TITLE,
       category: StringConst.FMS,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
-      width: 0.2375,
+      width: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_5_TITLE,
       category: StringConst.INVENTORY,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
+      width: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
       category: StringConst.ACCOUNTS,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
-      width: 0.475,
-      mobileHeight: 0.3,
+      width: 0.3,
+      // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_7_TITLE,
       category: StringConst.FMS,
       projectCoverUrl: ImagePath.PORTFOLIO_7,
-      width: 0.475,
-      mobileHeight: 0.3,
+      width: 0.3,
+      // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_8_TITLE,
       category: StringConst.HEALTH_CARE,
       projectCoverUrl: ImagePath.PORTFOLIO_8,
-      width: 0.475,
-      mobileHeight: 0.3,
+      width: 0.3,
+      // mobileHeight: 0.3,
     ),
   ];
   static List<ProjectData> eccommerce = [

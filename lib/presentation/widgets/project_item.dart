@@ -117,7 +117,7 @@ class _ProjectItemState extends State<ProjectItem>
               widget.imageUrl,
               width: widget.width,
               height: widget.height,
-              fit: BoxFit.fill,
+              fit: BoxFit.contain,
             ),
             Positioned(
               bottom: 0,
@@ -208,7 +208,7 @@ class ProjectCover extends StatelessWidget {
               Text(
                 title,
                 style: titleStyle ??
-                    textTheme.headline6?.copyWith(
+                    textTheme.titleLarge?.copyWith(
                       color: AppColors.white,
                     ),
               ),
@@ -216,7 +216,7 @@ class ProjectCover extends StatelessWidget {
               Text(
                 subtitle,
                 style: subtitleStyle ??
-                    textTheme.subtitle2?.copyWith(
+                    textTheme.titleSmall?.copyWith(
                       color: AppColors.white,
                       fontSize: Sizes.TEXT_SIZE_16,
                     ),

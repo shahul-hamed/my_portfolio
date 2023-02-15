@@ -13,7 +13,7 @@ class NavSectionMobile extends StatelessWidget {
     return Container(
       height: Sizes.HEIGHT_100,
       decoration: BoxDecoration(
-        color: AppColors.black100,
+        color: AppColors.primary200,
       ),
       child: Row(
         children: [
@@ -35,9 +35,15 @@ class NavSectionMobile extends StatelessWidget {
           Spacer(),
           InkWell(
             onTap: () {},
-            child: Image.asset(
-              ImagePath.LOGO_LIGHT,
-              height: Sizes.HEIGHT_52,
+            child: Row(
+              children: [
+                // Image.asset(
+                //   ImagePath.LOGO_LIGHT,
+                //   height: Sizes.HEIGHT_52,
+                // ),
+                // SizedBox(width: Sizes.WIDTH_10,),
+                Text(StringConst.BIO,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),)
+              ],
             ),
           ),
           Spacer(),
