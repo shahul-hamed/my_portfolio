@@ -71,7 +71,7 @@ class NimbusButton extends StatelessWidget {
               child: Text(
                 buttonTitle,
                 style: titleStyle ??
-                    textTheme.button?.copyWith(
+                    textTheme.labelLarge?.copyWith(
                       color: titleColor,
                       fontSize: textSize,
                       letterSpacing: 1.1,
@@ -86,7 +86,7 @@ class NimbusButton extends StatelessWidget {
       return Text(
         buttonTitle,
         style: titleStyle ??
-            textTheme.button?.copyWith(
+            textTheme.labelLarge?.copyWith(
               color: titleColor,
               fontSize: textSize,
               letterSpacing: 1.1,

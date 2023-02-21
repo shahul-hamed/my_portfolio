@@ -88,7 +88,7 @@ class _SkillCardState extends State<SkillCard> {
                 SelectableText(
                   widget.title,
                   textAlign: TextAlign.center,
-                  style: widget.titleStyle ?? textTheme.subtitle1,
+                  style: widget.titleStyle ?? textTheme.titleMedium,
                 ),
               ],
             ),
@@ -120,7 +120,7 @@ class _SkillCardState extends State<SkillCard> {
                   Text(
                     widget.title,
                     style: widget.titleStyle ??
-                        textTheme.subtitle1?.copyWith(
+                        textTheme.titleMedium?.copyWith(
                           color: AppColors.white,
                         ),
                   ),
@@ -128,7 +128,7 @@ class _SkillCardState extends State<SkillCard> {
                   Text(
                     widget.description,
                     style: widget.descriptionStyle ??
-                        textTheme.bodyText2?.copyWith(
+                        textTheme.bodyMedium?.copyWith(
                           color: AppColors.primaryText1,
                         ),
                   ),

@@ -133,7 +133,7 @@ class _BlogCardState extends State<BlogCard> {
                 child: Text(
                   widget.category,
                   style: widget.categoryStyle ??
-                      textTheme.subtitle1?.copyWith(
+                      textTheme.titleMedium?.copyWith(
                         fontSize: Sizes.TEXT_SIZE_15,
                         color: AppColors.white,
                       ),
@@ -157,14 +157,14 @@ class _BlogCardState extends State<BlogCard> {
                     SpaceW8(),
                     Text(
                       widget.date,
-                      style: widget.dateStyle ?? textTheme.subtitle2,
+                      style: widget.dateStyle ?? textTheme.titleSmall,
                     )
                   ],
                 ),
                 SpaceH8(),
                 AnimatedLineThrough(
                   text: widget.title,
-                  textStyle: widget.titleStyle ?? textTheme.headline5,
+                  textStyle: widget.titleStyle ?? textTheme.headlineSmall,
                 ),
                 SpaceH16(),
                 AnimatedNimbusButton(

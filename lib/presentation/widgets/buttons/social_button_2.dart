@@ -126,7 +126,7 @@ class _SocialButton2State extends State<SocialButton2>
             Text(
               widget.title,
               style: widget.titleStyle ??
-                  textTheme.subtitle2?.copyWith(
+                  textTheme.titleSmall?.copyWith(
                     fontSize: Sizes.TEXT_SIZE_13,
                     color:  animation.value,
                   ),

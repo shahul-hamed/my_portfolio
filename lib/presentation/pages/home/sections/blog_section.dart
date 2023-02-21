@@ -46,7 +46,7 @@ class _BlogSectionState extends State<BlogSection> {
           right: 0,
           child: SelectableText(
             StringConst.BLOGGING,
-            style: textTheme.headline1?.copyWith(
+            style: textTheme.displayLarge?.copyWith(
               color: AppColors.grey50,
               fontSize: headerIntroTextSize * 2,
             ),

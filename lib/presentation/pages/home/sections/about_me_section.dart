@@ -170,7 +170,7 @@ class _AboutMeSectionState extends State<AboutMeSection>
   Widget _buildImage({required double width, required double height}) {
     TextTheme textTheme = Theme.of(context).textTheme;
     double fontSize = responsiveSize(context, 60, 72, md: 64);
-    TextStyle? titleStyle = textTheme.bodyText1?.merge(
+    TextStyle? titleStyle = textTheme.bodyLarge?.merge(
       Styles.customTextStyle3(fontSize: fontSize, height: 1.25),
     );
 
@@ -309,7 +309,7 @@ class _AboutMeSectionState extends State<AboutMeSection>
                   children: [
                     Text(
                       StringConst.FOLLOW_ME_1,
-                      style: textTheme.headline6?.copyWith(
+                      style: textTheme.titleLarge?.copyWith(
                         color: AppColors.black,
                       ),
                     ),
@@ -343,7 +343,7 @@ class _AboutMeSectionState extends State<AboutMeSection>
         children: [
           Text(
             StringConst.FOLLOW_ME_1,
-            style: textTheme.headline6?.copyWith(color: AppColors.black),
+            style: textTheme.titleLarge?.copyWith(color: AppColors.black),
           ),
           SpaceH16(),
           Wrap(

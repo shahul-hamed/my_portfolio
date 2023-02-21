@@ -23,7 +23,7 @@ class TextWithBullet extends StatelessWidget {
         Text(
           text,
           style: textStyle ??
-              textTheme.bodyText1?.copyWith(
+              textTheme.bodyLarge?.copyWith(
                 color: AppColors.primaryText2,
               ),
         ),

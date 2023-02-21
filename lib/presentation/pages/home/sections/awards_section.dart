@@ -184,7 +184,7 @@ class _AwardsSectionState extends State<AwardsSection>
     required double height,
   }) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? titleStyle = textTheme.bodyText1?.merge(
+    TextStyle? titleStyle = textTheme.bodyLarge?.merge(
       Styles.customTextStyle3(
         fontSize: responsiveSize(context, 64, 80, md: 76),
         height: 1.25,
@@ -260,7 +260,7 @@ class _AwardsSectionState extends State<AwardsSection>
       children: [
         Text(
           StringConst.AWARDS_TYPE_TITLE_1,
-          style: textTheme.headline6,
+          style: textTheme.titleLarge,
         ),
         SpaceH16(),
         ..._buildAwards(Data.awards1),
@@ -275,7 +275,7 @@ class _AwardsSectionState extends State<AwardsSection>
       children: [
         Text(
           StringConst.AWARDS_TYPE_TITLE_2,
-          style: textTheme.headline5,
+          style: textTheme.headlineSmall,
         ),
         SpaceH16(),
         ..._buildAwards(Data.awards1),

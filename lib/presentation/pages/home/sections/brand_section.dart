@@ -42,7 +42,7 @@ class BrandSection extends StatelessWidget {
           Text(
             StringConst.BRANDS_SECTION_TITLE,
             textAlign: TextAlign.center,
-            style: textTheme.headline4,
+            style: textTheme.headlineMedium,
           ),
           SpaceH40(),
           ResponsiveBuilder(

@@ -5,8 +5,8 @@ class Styles {
     Color color = AppColors.primaryText1,
     FontWeight fontWeight = FontWeight.w700,
     double fontSize = Sizes.TEXT_SIZE_14,
-    FontStyle fontStyle: FontStyle.normal,
-    TextDecoration decoration: TextDecoration.none,
+    FontStyle fontStyle = FontStyle.normal,
+    TextDecoration decoration = TextDecoration.none,
   }) {
     return GoogleFonts.merriweather(
       fontSize: fontSize,
@@ -21,8 +21,8 @@ class Styles {
     Color color = AppColors.primaryText1,
     FontWeight fontWeight = FontWeight.w400,
     double fontSize = Sizes.TEXT_SIZE_16,
-    FontStyle fontStyle: FontStyle.normal,
-    TextDecoration decoration: TextDecoration.none,
+    FontStyle fontStyle = FontStyle.normal,
+    TextDecoration decoration = TextDecoration.none,
   }) {
     return GoogleFonts.lato(
       fontSize: fontSize,
@@ -38,8 +38,8 @@ class Styles {
     FontWeight fontWeight = FontWeight.w400,
     double fontSize = 60,
     double? height,
-    FontStyle fontStyle: FontStyle.normal,
-    TextDecoration decoration: TextDecoration.none,
+    FontStyle fontStyle = FontStyle.normal,
+    TextDecoration decoration = TextDecoration.none,
   }) {
     return GoogleFonts.gloriaHallelujah(
       fontSize: fontSize,
