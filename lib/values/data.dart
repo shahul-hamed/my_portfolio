@@ -73,11 +73,11 @@ class Data {
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_4,
-      level: 85,
+      level: 80,
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_5,
-      level: 70,
+      level: 60,
     ),
   ];
 
@@ -117,11 +117,11 @@ class Data {
   ];
 
   static List<ProjectCategoryData> projectCategories = [
-    ProjectCategoryData(title: StringConst.ALL, number: 8, isSelected: true),
+    ProjectCategoryData(title: StringConst.ALL, number: 7, isSelected: true),
     ProjectCategoryData(title: StringConst.ECOMMERCE, number: 2),
     ProjectCategoryData(title: StringConst.HEALTH_CARE, number: 1),
     ProjectCategoryData(title: StringConst.INVENTORY, number: 1),
-    ProjectCategoryData(title: StringConst.ACCOUNTS, number: 2),
+    ProjectCategoryData(title: StringConst.ACCOUNTS, number: 1),
     ProjectCategoryData(title: StringConst.FMS, number: 2),
 
   ];
@@ -205,12 +205,12 @@ class Data {
       projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.3,
     ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.ACCOUNTS,
-      projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.3,
-    ),
+    // ProjectData(
+    //   title: StringConst.PORTFOLIO_3_TITLE,
+    //   category: StringConst.ACCOUNTS,
+    //   projectCoverUrl: ImagePath.PORTFOLIO_3,
+    //   width: 0.3,
+    // ),
     ProjectData(
       title: StringConst.PORTFOLIO_4_TITLE,
       category: StringConst.FMS,
@@ -277,12 +277,12 @@ class Data {
     ),
   ];
   static List<ProjectData> accounts = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
-      category: StringConst.ACCOUNTS,
-      projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
-    ),
+    // ProjectData(
+    //   title: StringConst.PORTFOLIO_3_TITLE,
+    //   category: StringConst.ACCOUNTS,
+    //   projectCoverUrl: ImagePath.PORTFOLIO_3,
+    //   width: 0.225,
+    // ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
       category: StringConst.ACCOUNTS,

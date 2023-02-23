@@ -25,11 +25,11 @@ class StringConst {
   static const String POSITION = "Flutter Developer";
   static const String BIO = "Flutter | Golang | Jenkins";
   static const String ABOUT_DEV =
-      "Senior flutter developer working in mobile app development field for 3+ years so far, specialized in Software development, Rest API creations and Test automation.";
+      "Senior flutter developer working in software development field for 3+ years so far, specialized in Mobile app development, Rest API creations and Test automation also.";
   static const String ABOUT_ME_1 =
-      "Senior flutter developer working in mobile app development field for";
+      "Senior flutter developer working in software development field for";
   static const String ABOUT_ME_2 =
-      "3+ years so far, specialized in Software development, Rest API creations and Test automation.";
+      "3+ years so far, specialized in Mobile app development, Rest API creations and Test automation also.";
   static const String DOWNLOAD_CV = "Download CV";
   static const String EMAIL = "Email";
   static const String DEV_EMAIL_2 = "shahul5.it@mail.com";

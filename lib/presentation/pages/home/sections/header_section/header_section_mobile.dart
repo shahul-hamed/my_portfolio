@@ -118,16 +118,16 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
             children: [
               Stack(
                 children: [
-                  Container(
-                    margin: EdgeInsets.only(top: heightOfStack * 0.1),
-                    child: SelectableText(
-                      StringConst.FIRST_NAME,
-                      style: textTheme.displayLarge?.copyWith(
-                        color: AppColors.grey50,
-                        fontSize: headerIntroTextSize * 2.5,
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   margin: EdgeInsets.only(top: heightOfStack * 0.1),
+                  //   child: SelectableText(
+                  //     StringConst.FIRST_NAME,
+                  //     style: textTheme.displayLarge?.copyWith(
+                  //       color: AppColors.grey50,
+                  //       fontSize: headerIntroTextSize * 2.5,
+                  //     ),
+                  //   ),
+                  // ),
                   Container(
                     padding:
                         const EdgeInsets.symmetric(horizontal: sidePadding),

@@ -28,8 +28,29 @@
 
   <title>shahul/portfolio</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .loader {
+      width: 80px;
+      height: 80px;
+    }
+
+  </style>
 </head>
 <body>
+<div class="loading">
+  <div><img class="loader" src="icons/loader.gif"></div>
+</div>
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
