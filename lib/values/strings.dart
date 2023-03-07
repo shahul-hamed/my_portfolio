@@ -43,12 +43,6 @@ class StringConst {
   static const String FREELANCER = "Freelancer";
   static const String FREELANCER_DESC = "You can hire me now as a freelancer";
 
-  static const String DART = "Dart";
-  static const String ANGULAR_DART = "AngularDart";
-  static const String FLUTTER = "Flutter";
-  static const String GOLANG = "Golang";
-  static const String HTML = "HTML";
-  static const String CSS = "CSS";
 
   //AboutMe Section
   static const String HI = "Hi";

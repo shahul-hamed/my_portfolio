@@ -11,7 +11,7 @@ class HeaderImage extends StatefulWidget {
   const HeaderImage({
     Key? key,
     required this.controller,
-    this.globeSize = 150,
+    this.globeSize = 120,
     this.imageHeight,
     this.imageWidth,
     this.fit,

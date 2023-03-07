@@ -33,6 +33,7 @@ class CircularContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: borderRadius,
+        boxShadow: [BoxShadow(blurRadius: 3,color: AppColors.offWhite)]
       ),
       child: child ??
           Icon(

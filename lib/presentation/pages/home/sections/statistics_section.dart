@@ -67,15 +67,23 @@ class _StatisticsSectionState extends State<StatisticsSection>
               if (screenWidth < (RefinedBreakpoints().tabletLarge)) {
                 return Container(
                   width: contentAreaWidth,
-                  padding:
-                      const EdgeInsets.symmetric(vertical: Sizes.PADDING_40),
+
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.yellow,
+                          borderRadius: BorderRadius.only(topRight: Radius.circular(12),topLeft: Radius.circular(12))
+                        ),
+                        height: 15,
+                      ),
+                      SizedBox(height: Sizes.PADDING_36),
                       SpaceH30(),
                       ..._buildItems(Data.statItemsData),
                       SpaceH30(),
+                      SizedBox(height: Sizes.PADDING_40)
                     ],
                   ),
                 );
@@ -85,26 +93,15 @@ class _StatisticsSectionState extends State<StatisticsSection>
                     topLeft: Radius.circular(Sizes.RADIUS_10),
                     bottomRight: Radius.circular(Sizes.RADIUS_10),
                   ),
-                  child: Stack(
+                  child: Column(
                     children: [
-                      Positioned(
-                        top: -75,
-                        left: -50,
-                        child: Image.asset(
-                          ImagePath.BOX_COVER_GOLD,
-                          color: AppColors.yellow,
-                          height: 200,
+                      Container(
+                        decoration: BoxDecoration(
+                            color: AppColors.yellow,
+                            borderRadius: BorderRadius.only(topRight: Radius.circular(Sizes.RADIUS_10),topLeft: Radius.circular(Sizes.RADIUS_10))
                         ),
+                        height: 15,
                       ),
-                      // Positioned(
-                      //   right: -25,
-                      //   bottom: -25,
-                      //   child: Image.asset(
-                      //     ImagePath.BOX_COVER_BLACK,
-                      //     height: 200,
-                      //
-                      //   ),
-                      // ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: Sizes.PADDING_40),

@@ -25,7 +25,7 @@ class SkillCard extends StatefulWidget {
     this.backgroundColor = AppColors.white,
     this.iconData = Icons.phone,
     this.iconColor = AppColors.white,
-    this.iconBackgroundColor = AppColors.black,
+    this.iconBackgroundColor = AppColors.primaryColor,
     this.child,
     this.onHoverChild,
   });

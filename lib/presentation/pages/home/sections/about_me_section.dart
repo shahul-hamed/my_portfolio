@@ -218,26 +218,26 @@ class _AboutMeSectionState extends State<AboutMeSection>
             ),
           ],
         ),
-        Positioned(
-          top: width * 0.2,
-          left: width * 0.2,
-          child: FadeTransition(
-            opacity: _fadeInAnimation,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  StringConst.HI,
-                  style: titleStyle,
-                ),
-                Text(
-                  StringConst.THERE,
-                  style: titleStyle,
-                ),
-              ],
-            ),
-          ),
-        ),
+        // Positioned(
+        //   top: width * 0.2,
+        //   left: width * 0.2,
+        //   child: FadeTransition(
+        //     opacity: _fadeInAnimation,
+        //     child: Column(
+        //       crossAxisAlignment: CrossAxisAlignment.start,
+        //       children: [
+        //         Text(
+        //           StringConst.HI,
+        //           style: titleStyle,
+        //         ),
+        //         Text(
+        //           StringConst.THERE,
+        //           style: titleStyle,
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }

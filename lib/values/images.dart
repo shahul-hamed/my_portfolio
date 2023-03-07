@@ -32,8 +32,8 @@ class ImagePath {
   static const String DOTS_GLOBE_YELLOW_2 = "$imageDir/dots_globe_yellow2.png";
 
   // Dev
-  static const String DEV_ABOUT_ME = "$imageDir/dev_aboutme.png";
-  static const String DEV_HEADER = "$imageDir/dev_header.png";
+  static const String DEV_ABOUT_ME = "$imageDir/about_me.png";
+  static const String DEV_HEADER = "$imageDir/header.png";
   static const String DEV_AWARD = "$imageDir/dev_award.png";
   static const String GHANA_FLAG = "$imageDir/india.png";
 

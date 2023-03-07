@@ -68,7 +68,8 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
     double dottedGoldenGlobeOffset = sizeOfBlobSm * 0.4;
     double heightOfBlobAndGlobe =
         computeHeight(dottedGoldenGlobeOffset, sizeOfGoldenGlobe, sizeOfBlobSm);
-    double heightOfStack = heightOfBlobAndGlobe * 2;
+    double heightOfStack = heightOfBlobAndGlobe * 2.2;
+    double widthOfStack = heightOfBlobAndGlobe * 2.1;
     double blobOffset = heightOfStack * 0.3;
     return ContentArea(
       child: Stack(
@@ -102,20 +103,22 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                     ),
                   ],
                 ),
-                Positioned(
-                  right: -(sizeOfBlobSm),
-                  child: HeaderImage(
-                    controller: _controller,
-                    globeSize: sizeOfGoldenGlobe,
-                    imageHeight: heightOfStack,
-                  ),
-                ),
+                // Positioned(
+                //   right: -(sizeOfBlobSm),
+                //   child: HeaderImage(
+                //     controller: _controller,
+                //     globeSize: sizeOfGoldenGlobe,
+                //     imageHeight: heightOfStack,
+                //
+                //   ),
+                // ),
               ],
             ),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+
               Stack(
                 children: [
                   // Container(
@@ -257,7 +260,15 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                             SpaceH30(),
                             Wrap(
                               children: buildSocialIcons(Data.socialData),
-                            )
+                            ),
+                            SpaceH30(),
+                            HeaderImage(
+                              controller: _controller,
+                              globeSize: sizeOfGoldenGlobe,
+                              imageHeight: heightOfStack,
+                              imageWidth: widthOfStack,
+
+                            ),
                           ],
                         ),
                       ],
@@ -265,6 +276,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                   ),
                 ],
               ),
+
               SpaceH40(),
               Padding(
                 padding: EdgeInsets.symmetric(

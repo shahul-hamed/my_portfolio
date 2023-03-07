@@ -91,8 +91,9 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
     double dottedGoldenGlobeOffset = sizeOfBlobSm * 0.4;
     double heightOfBlobAndGlobe =
         computeHeight(dottedGoldenGlobeOffset, sizeOfGoldenGlobe, sizeOfBlobSm);
-    double heightOfStack = heightOfBlobAndGlobe * 2;
-    double blobOffset = heightOfStack * 0.3;
+    double heightOfStack = heightOfBlobAndGlobe * 1.1;
+    double widthOfStack = heightOfBlobAndGlobe * 1.9;
+    double blobOffset = heightOfStack * 0.25;
     return ContentArea(
       child: Stack(
         children: [
@@ -126,11 +127,13 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                   ],
                 ),
                 Positioned(
-                  right: -(sizeOfBlobSm * 0.8),
+                  right: -(sizeOfBlobSm * 0.14),
                   child: HeaderImage(
                     controller: _controller,
                     globeSize: sizeOfGoldenGlobe,
                     imageHeight: heightOfStack,
+                    imageWidth: widthOfStack,
+
                   ),
                 ),
               ],
