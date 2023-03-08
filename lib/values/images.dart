@@ -5,10 +5,6 @@ class ImagePath {
   static const String imageDir = "assets/images";
   static const String screenshotsDir = "assets/screenshots";
 
-  // Logo
-  static const String LOGO_DARK = "$imageDir/logo_dark.png";
-  static const String LOGO_LIGHT = "$imageDir/logo_light.png";
-
   //profile logo
   static const String FLUTTER_DEV = "$imageDir/frontend_Dev.png";
   static const String API_DEV = "$imageDir/backend_dev.png";

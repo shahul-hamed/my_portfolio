@@ -68,16 +68,16 @@ class Data {
       level: 80,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_3,
-      level: 70,
-    ),
-    SkillLevelData(
       skill: StringConst.SKILLS_4,
       level: 80,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_5,
+      skill: StringConst.SKILLS_3,
       level: 60,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_5,
+      level: 55,
     ),
   ];
 

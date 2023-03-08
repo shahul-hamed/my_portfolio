@@ -47,9 +47,9 @@ class _SkillsSectionState extends State<SkillsSection>
     double contentAreaWidthSm = screenWidth;
     double contentAreaHeight = responsiveSize(
       context,
-      screenHeight * 1.6,
-      screenHeight * 0.8,
-      md: screenHeight * 0.8,
+      screenHeight * 1.8,
+      screenHeight * 0.9,
+      md: screenHeight * 0.95,
       sm: screenHeight * 1.6,
     );
 
@@ -109,7 +109,7 @@ class _SkillsSectionState extends State<SkillsSection>
                     ContentArea(
                       width: contentAreaWidthSm,
                       child: Center(
-                        child: _buildSkillBoxes(boxHeight: 250),
+                        child: _buildSkillBoxes(boxHeight: 300),
                       ),
                     ),
                   ],
@@ -139,7 +139,7 @@ class _SkillsSectionState extends State<SkillsSection>
                           EdgeInsets.symmetric(horizontal: Sizes.HEIGHT_48),
                       child: Center(
                         child: _buildSkillBoxes(
-                          boxHeight: 250,
+                          boxHeight: 300,
                           crossAxisCount: 2,
                         ),
                       ),
@@ -174,14 +174,14 @@ class _SkillsSectionState extends State<SkillsSection>
 
   Widget _buildSkillBoxes({
     required double boxHeight,
-    int crossAxisCount = 2,
+    int crossAxisCount = 3,
     double? boxWidth,
   }) {
 
     return Container(
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: crossAxisCount,
-          mainAxisSpacing: kMainAxisSpacing,crossAxisSpacing: kCrossAxisSpacing
+          mainAxisSpacing: kMainAxisSpacing,crossAxisSpacing: kCrossAxisSpacing,childAspectRatio: 1.35
         ),
         itemCount: Data.skillCardData.length,
         shrinkWrap: true,
@@ -212,7 +212,7 @@ class _SkillsSectionState extends State<SkillsSection>
         items.add(
           SkillCard(
             width: widthOfScreen(context),
-            height: 140,
+            height: 120,
             title: skill[index].title,
             description: skill[index].description,
             iconData: skill[index].iconData,

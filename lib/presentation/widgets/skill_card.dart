@@ -19,7 +19,7 @@ class SkillCard extends StatefulWidget {
     this.descriptionStyle,
     this.width,
     this.height,
-    this.iconSize = 40,
+    this.iconSize = 35,
     this.elevation = Sizes.ELEVATION_4,
     this.borderRadius = const BorderRadius.all(Radius.circular(8)),
     this.backgroundColor = AppColors.white,

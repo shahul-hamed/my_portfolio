@@ -64,12 +64,6 @@ class StringConst {
   static const String SKILLS_TITLE_2 = "Skills Include";
   static const String SKILLS_DESC =
       "These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful.";
-  static const String TOOLS_1_NAME = "Photoshop";
-  static const String TOOLS_1_PROFICIENCY = "80%";
-  static const String TOOLS_2_NAME = "Illustrator";
-  static const String TOOLS_2_PROFICIENCY = "90%";
-  static const String TOOLS_3_NAME = "Sketch";
-  static const String TOOLS_3_PROFICIENCY = "70%";
   static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
       "Having well knowledge in mobile app development using flutter";

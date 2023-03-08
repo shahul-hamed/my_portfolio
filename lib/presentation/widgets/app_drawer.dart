@@ -50,14 +50,6 @@ class _AppDrawerState extends State<AppDrawer> {
             children: [
               Row(
                 children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Image.asset(
-                      ImagePath.LOGO_LIGHT,
-                      height: Sizes.HEIGHT_52,
-                    ),
-                  ),
-                  SizedBox(width: Sizes.WIDTH_10,),
                   Text(StringConst.FULL_NAME,style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold,color:AppColors.primaryColor),),
                   Spacer(),
                   InkWell(
@@ -65,7 +57,7 @@ class _AppDrawerState extends State<AppDrawer> {
                     child: Icon(
                       Icons.close,
                       size: Sizes.ICON_SIZE_30,
-                      color: AppColors.white,
+                      color: AppColors.primaryColor,
                     ),
                   ),
                 ],
