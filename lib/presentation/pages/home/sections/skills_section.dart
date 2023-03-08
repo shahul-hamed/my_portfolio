@@ -181,7 +181,7 @@ class _SkillsSectionState extends State<SkillsSection>
     return Container(
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: crossAxisCount,
-          mainAxisSpacing: kMainAxisSpacing,crossAxisSpacing: kCrossAxisSpacing,childAspectRatio: 1.35
+          mainAxisSpacing: kMainAxisSpacing,crossAxisSpacing: kCrossAxisSpacing,childAspectRatio: 1.3
         ),
         itemCount: Data.skillCardData.length,
         shrinkWrap: true,
@@ -193,6 +193,8 @@ class _SkillsSectionState extends State<SkillsSection>
               title: Data.skillCardData[index].title,
               description: Data.skillCardData[index].description,
               iconData: Data.skillCardData[index].iconData,
+              imgUrl: Data.skillCardData[index].imgUrl,
+
             );
           },
         // staggeredTileBuilder: (int index) {
@@ -212,10 +214,11 @@ class _SkillsSectionState extends State<SkillsSection>
         items.add(
           SkillCard(
             width: widthOfScreen(context),
-            height: 120,
+            height: 130,
             title: skill[index].title,
             description: skill[index].description,
             iconData: skill[index].iconData,
+            imgUrl: skill[index].imgUrl,
           ),
         );
         items.add(SpaceH16());

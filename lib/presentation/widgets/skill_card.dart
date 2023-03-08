@@ -7,23 +7,25 @@ class SkillCardData {
   final String title;
   final String description;
   final IconData iconData;
+  final String imgUrl;
 
-  SkillCardData({required this.title, required this.iconData,required this.description});
+  SkillCardData({required this.title, required this.iconData,required this.description,required this.imgUrl});
 }
 
 class SkillCard extends StatefulWidget {
   SkillCard({
     this.title = "",
     this.description = "",
-    this.titleStyle,
+    this.titleStyle = const TextStyle(color: AppColors.primary300,fontSize: 16,fontWeight: FontWeight.bold),
     this.descriptionStyle,
     this.width,
     this.height,
-    this.iconSize = 35,
+    this.iconSize = 32,
     this.elevation = Sizes.ELEVATION_4,
     this.borderRadius = const BorderRadius.all(Radius.circular(8)),
     this.backgroundColor = AppColors.white,
     this.iconData = Icons.phone,
+    this.imgUrl = "",
     this.iconColor = AppColors.white,
     this.iconBackgroundColor = AppColors.primaryColor,
     this.child,
@@ -43,6 +45,7 @@ class SkillCard extends StatefulWidget {
   final Color iconColor;
   final Color iconBackgroundColor;
   final IconData iconData;
+  final String imgUrl;
   final Widget? child;
   final Widget? onHoverChild;
 
@@ -78,11 +81,13 @@ class _SkillCardState extends State<SkillCard> {
               children: [
                 CircularContainer(
                   backgroundColor: widget.iconBackgroundColor,
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),height: 80,
+                  width: 70,
                   borderRadius: const BorderRadius.all(Radius.circular(40)),
                   iconData: widget.iconData,
                   iconColor: widget.iconColor,
                   iconSize: widget.iconSize,
+                  child: Image(image: NetworkImage(widget.imgUrl),fit: BoxFit.contain,height: widget.iconSize),
                 ),
                 SpaceH12(),
                 SelectableText(

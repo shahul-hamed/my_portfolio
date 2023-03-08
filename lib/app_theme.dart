@@ -14,6 +14,7 @@ class AppTheme {
     return ThemeData(
       textTheme: _textTheme,
       iconTheme: IconThemeData(color: AppColors.white),
+      fontFamily: "Poppins",
       canvasColor: colorScheme.background,
       scaffoldBackgroundColor: colorScheme.background,
       highlightColor: Colors.transparent,

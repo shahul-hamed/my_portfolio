@@ -86,26 +86,31 @@ class Data {
       title: StringConst.SKILLS_1,
       description: StringConst.SKILLS_1_DESC,
       iconData: FontAwesomeIcons.mobile,
+      imgUrl:"https://static-00.iconduck.com/assets.00/flutter-icon-413x512-gzhzjv14.png"
     ), //not being used
     SkillCardData(
       title: StringConst.SKILLS_2,
       description: StringConst.SKILLS_2_DESC,
       iconData: Icons.web,
+      imgUrl: "https://avatars.githubusercontent.com/u/75800247?s=280&v=4"
     ),
     SkillCardData(
       title: StringConst.SKILLS_3,
       description: StringConst.SKILLS_3_DESC,
       iconData: FontAwesomeIcons.code,
+      imgUrl: "https://cdn.iconscout.com/icon/free/png-256/code-igniter-3521353-2944797.png?f=webp&w=128"
     ),
     SkillCardData(
       title: StringConst.SKILLS_4,
       description: StringConst.SKILLS_4_DESC,
       iconData: FontAwesomeIcons.firefox,
+      imgUrl: "https://www.gameartguppy.com/wp-content/uploads/2019/04/mascot_firebase-logo.png"
     ),
     SkillCardData(
       title: StringConst.SKILLS_5,
       description: StringConst.SKILLS_5_DESC,
       iconData: FontAwesomeIcons.jenkins,
+      imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png"
     ),
     //not being used
   ];
