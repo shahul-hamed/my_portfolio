@@ -1,4 +1,4 @@
-# nimbus
+# portfolio
 
 <h1 align="center">
   <a href="https://david-legend.github.io/nimbus/" target="_blank">https://github.com/shahul-hamed/my_portfolio/</a>
@@ -14,5 +14,5 @@
 
 <br/><br/>
 
-![Screenshot](assets/screenshots/nimbus.jpg)
-![Screenshot](assets/screenshots/nimbus_2.jpg)
+![Screenshot](assets/screenshots/portfolio1.png)
+![Screenshot](assets/screenshots/portfolio2.png)

@@ -79,14 +79,17 @@ class StringConst {
   static const String SKILLS_5 = "CICD pipeline";
   static const String SKILLS_5_DESC =
       "Know the flutter app automation using Jenkins";
+  static const String SKILLS_6 = "Git";
+  static const String SKILLS_6_DESC =
+      "Day to day project I'm using Git to code repository management with Development and staging environments";
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
-  static const int HAPPY_CLIENTS_NUM = 10;
+  static const int HAPPY_CLIENTS_NUM = 11;
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
-  static const int YEARS_OF_EXPERIENCE_NUM = 3;
+  static const int YEARS_OF_EXPERIENCE_NUM = 4;
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
-  static const int INCREDIBLE_PROJECTS_NUM = 13;
+  static const int INCREDIBLE_PROJECTS_NUM = 14;
   static const String AWARD_WINNING = "Award Winning";
   static const String AWARD_WINNING_NUM = "18";
 
@@ -101,6 +104,7 @@ class StringConst {
   static const String INVENTORY = "Inventory";
   static const String HEALTH_CARE = "Heath care";
   static const String FMS = "Employee management";
+  static const String FREELANCE = "Freelance";
   static const String ACCOUNTS = "Accounts & Trading";
   static const String PORTFOLIO_1_TITLE = "Engaje commerce";
   static const String PORTFOLIO_2_TITLE = "Nearle Commerce";
@@ -110,6 +114,7 @@ class StringConst {
   static const String PORTFOLIO_8_TITLE = "Psycare online";
   static const String PORTFOLIO_6_TITLE = "Finance";
   static const String PORTFOLIO_7_TITLE = "Haqtoo Tracking";
+  static const String PORTFOLIO_9_TITLE = "HOC";
 
   //Awards & Section
   static const String MY = "My";
