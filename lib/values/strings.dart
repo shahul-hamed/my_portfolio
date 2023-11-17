@@ -25,7 +25,7 @@ class StringConst {
   static const String POSITION = "Flutter Developer";
   static const String BIO = "Flutter | Golang | Jenkins";
   static const String ABOUT_DEV =
-      "Senior flutter developer working in software development field for 3+ years so far, specialized in Mobile app development, Rest API creations and Test automation also.";
+      "Flutter developer with 4+ years of experience in Software development. Developed 8+ mobile applications including Android, IOS and Web. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. Expertise in cross platform mobile application development as well as web application development.";
   static const String ABOUT_ME_1 =
       "Senior flutter developer working in software development field for";
   static const String ABOUT_ME_2 =
@@ -34,12 +34,12 @@ class StringConst {
   static const String EMAIL = "Email";
   static const String DEV_EMAIL_2 = "shahul5.it@mail.com";
   static const String BEHANCE = "linkedin";
-  static const String BEHANCE_ID = "www.linkedin.com/in/shahul-hameed-j-b76879220";
+  static const String BEHANCE_ID = "www.linkedin.com/in/shahul-hameed-j";
   static const String HIRE_ME_NOW = "Hire Me Now";
   static const String UI = "Flutter Developer";
-  static const String UI_DESC = "Creative mobile apps with well designed UI for you";
-  static const String BACKEND_DEV = "Golang Developer";
-  static const String BACKEND_DEV_DESC = "Able to create simple REST API using Go";
+  static const String UI_DESC = "Create pixel perfect UI mobile apps with strong design pattern";
+  static const String BACKEND_DEV = "Golang Newcomer";
+  static const String BACKEND_DEV_DESC = "Able to create simple REST API using Go language";
   static const String FREELANCER = "Freelancer";
   static const String FREELANCER_DESC = "You can hire me now as a freelancer";
 
@@ -49,7 +49,7 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Flutter developer with 3+ years of experience facilitating effective engineering solutions with a wide range of e-commerce applications , Inventory management , Knowledge in social media application development and technology skills. Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of rest API development and its integration approaches. Having knowledge in flutter testing and app automation. Currently working on the Pshycocare online application.";
+      "Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of rest API development and its integration approaches. Having knowledge in flutter testing and app automation.";
 
   static const String CREATIVE_DESIGN = "Need Mobile application with Innovative UI?";
   static const String HELP = "I can Help You!";
@@ -63,7 +63,7 @@ class StringConst {
   static const String SKILLS_TITLE_1 = "What My Design & Development";
   static const String SKILLS_TITLE_2 = "Skills Include";
   static const String SKILLS_DESC =
-      "These are the words we live by in everything we do. Every story we tell, every brand we build, and every interaction we create must not only look beautiful.";
+      "These are my highlighted skills that strongly essential in the Mobile application development.Strong Problem solving ability and logical thinking.";
   static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
       "Having well knowledge in mobile app development using flutter";
@@ -76,12 +76,14 @@ class StringConst {
   static const String SKILLS_4 = "Firebase";
   static const String SKILLS_4_DESC =
       "Used firebase for FCM notifications and authentication also";
-  static const String SKILLS_5 = "CICD pipeline";
+  static const String SKILLS_5 = "CICD";
+  static const String SKILLS_7 = "React";
+  static const String SKILLS_7_DESC = "Contributed react admin panel for managing RBAC controls";
   static const String SKILLS_5_DESC =
       "Know the flutter app automation using Jenkins";
   static const String SKILLS_6 = "Git";
   static const String SKILLS_6_DESC =
-      "Day to day project I'm using Git to code repository management with Development and staging environments";
+      "Day to day project I'm using Git to code repository management for Development and Staging environments";
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
@@ -97,7 +99,7 @@ class StringConst {
   static const String MEET_MY_PROJECTS = "Meet My Projects";
   static const String MY_WORKS = "my works";
   static const String PROJECTS_DESC =
-      "I had worked on the Ecommerce mobile and web applications, Having work experience in Inventory management applications and Employee management: task management and Leave management are the important features in that project.As a freelancer I have been working in a few more applications, latest projects are related to Accounts & trading and Employee attendance and activity tracking oriented. Finally, Im working on the health care ( Providing physical activity to improve the patients mental strength and tracking of emotions of patients ) related project . Projects profile following on";
+      "Prototyping and Strong design patternsin mobile applications. Implement pixel-perfect UI designs. Implemented comprehensive project management methodologies to drive successful product launches, resulting in a 30% increase in revenue. Implemented the MVC pattern to streamline code structure, resulting in 40% faster load times and improved scalability for future enhancements. Implemented Code re-usability via widgets customization in all projects. Effective State management by BLOC Pattern, GETX and MobX. Upgraded Exception Handling that reduces 60 - 70% bugs.Having work experience in Inventory management and Employee management applications.As a senior mobile app developer able to orchestrating product based on  the requirements and willingness to provide effective solution for software problems. Taking ownership of given projects and ensure on time delivery. Experienced in current projects phases using Agile methodologies. Projects are following on";
   static const String ALL_PROJECTS = "All Projects";
   static const String ALL = "All";
   static const String ECOMMERCE = "Ecommerce";
@@ -188,8 +190,8 @@ class StringConst {
   //URL Links
   static const String WEB_GENIUS_LAB_URL = "https://webgeniuslab.net/";
   static const String BEHANCE_URL = "https://www.linkedin.com/";
-  static const String DRIBBLE_URL = "https://dribbble.com/";
-  static const String LINKED_IN_URL = "https:linkedin.com/in/";
+  static const String DRIBBLE_URL = "https://dribbble.com/shahulj";
+  static const String LINKED_IN_URL = "https://www.linkedin.com/in/shahul-hameed-j/ ";
   static const String INSTAGRAM_URL = "https://www.instagram.com/";
   static const String GITHUB_URL = "https://github.com/shahul-hamed/";
   static const String FACEBOOK_URL = "https://facebook.com/";

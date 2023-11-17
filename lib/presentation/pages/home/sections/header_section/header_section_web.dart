@@ -255,7 +255,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                   buttonTitle: StringConst.DOWNLOAD_CV,
                                   buttonColor: AppColors.primaryColor,
                                   onPressed: () {
-                                    window.open("assets/my_resume.pdf", "text");
+                                    window.open("assets/shahul_hameed_cv.pdf", "text");
                                   },
                                 ),
                                 SpaceW16(),

@@ -235,7 +235,7 @@ class _HeaderSectionMobileState extends State<HeaderSectionMobile>
                                   height: buttonHeight,buttonColor: AppColors.primaryColor,
                                   buttonTitle: StringConst.DOWNLOAD_CV,
                                   onPressed: () {
-                                    window.open("assets/my_resume.pdf", "text");
+                                    window.open("assets/shahul_hameed_cv.pdf", "text");
                                   },
                                 ),
                                 SpaceW16(),
