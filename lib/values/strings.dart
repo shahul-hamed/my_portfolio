@@ -2,7 +2,7 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "Shahul CV";
+  static const String APP_NAME = "Shahul hameed CV";
 
   //Nav Section
   static const String NAME_ABBREV = "CA";
