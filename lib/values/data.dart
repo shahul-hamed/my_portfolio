@@ -74,20 +74,20 @@ class Data {
     ),
     SkillLevelData(
       skill: StringConst.SKILLS_2,
-      level: 80,
-    ),
-    SkillLevelData(
-      skill: StringConst.SKILLS_3,
       level: 60,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_5,
+      skill: StringConst.SKILLS_3,
       level: 50,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_7,
-      level: 40,
+      skill: StringConst.SKILLS_5,
+      level: 45,
     ),
+    // SkillLevelData(
+    //   skill: StringConst.SKILLS_7,
+    //   level: 35,
+    // ),
   ];
 
   static List<SkillCardData> skillCardData = [
@@ -127,12 +127,12 @@ class Data {
       iconData: FontAwesomeIcons.jenkins,
       imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png"
     ),
-    SkillCardData(
-      title: StringConst.SKILLS_7,
-      description: StringConst.SKILLS_7_DESC,
-      iconData: FontAwesomeIcons.react,
-      imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png"
-    ),
+    // SkillCardData(
+    //   title: StringConst.SKILLS_7,
+    //   description: StringConst.SKILLS_7_DESC,
+    //   iconData: FontAwesomeIcons.react,
+    //   imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png"
+    // ),
     //not being used
   ];
   static List<StatItemData> statItemsData = [

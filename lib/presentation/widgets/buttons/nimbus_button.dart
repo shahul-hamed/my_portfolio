@@ -13,9 +13,10 @@ class NimbusButton extends StatelessWidget {
     this.buttonColor = AppColors.black400,
     this.onPressed,
     this.padding = const EdgeInsets.all(Sizes.PADDING_8),
-    this.borderRadius = const BorderRadius.all(
-      Radius.circular(Sizes.RADIUS_4),
-    ),
+    this.borderRadius = const BorderRadius.all(Radius.circular(Sizes.RADIUS_4)),
+    // BorderRadius.all(
+    //   Radius.circular(Sizes.RADIUS_4),
+    // ),
     this.opensUrl = false,
     this.url = "",
     this.linkTarget = LinkTarget.blank,
@@ -28,7 +29,7 @@ class NimbusButton extends StatelessWidget {
   final TextStyle? titleStyle;
   final Color titleColor;
   final Color buttonColor;
-  final BorderRadius? borderRadius;
+  final BorderRadiusGeometry borderRadius;
   final EdgeInsetsGeometry padding;
   final String url;
   final LinkTarget linkTarget;
@@ -37,7 +38,7 @@ class NimbusButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: borderRadius,
+      borderRadius: borderRadius!,
       child: MaterialButton(
         minWidth: width,
         height: height,

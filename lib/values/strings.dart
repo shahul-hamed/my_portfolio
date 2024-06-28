@@ -2,7 +2,7 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "Shahul hameed CV";
+  static const String APP_NAME = "Shahul's Portfolio";
 
   //Nav Section
   static const String NAME_ABBREV = "CA";
@@ -25,7 +25,8 @@ class StringConst {
   static const String POSITION = "Flutter Developer";
   static const String BIO = "Flutter | Golang | Jenkins";
   static const String ABOUT_DEV =
-      "Flutter developer with 4+ years of experience in Software development. Developed 8+ mobile applications including Android, IOS and Web. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. Expertise in cross platform mobile application development as well as web application development.";
+      // "Flutter developer with 4+ years of experience in Software development. Developed 8+ mobile applications including Android, IOS and Web. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. Expertise in cross platform mobile application development as well as web application development.";
+     "Flutter developer with 5 years of experience in Software development. Developed 8+ mobile applications 2+ web applications, spearheaded to 4+ projects. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. an expert in cross platform mobile application development as well as web application development.";
   static const String ABOUT_ME_1 =
       "Senior flutter developer working in software development field for";
   static const String ABOUT_ME_2 =
@@ -41,7 +42,7 @@ class StringConst {
   static const String BACKEND_DEV = "Golang Newcomer";
   static const String BACKEND_DEV_DESC = "Able to create simple REST API using Go language";
   static const String FREELANCER = "Freelancer";
-  static const String FREELANCER_DESC = "You can hire me now as a freelancer";
+  static const String FREELANCER_DESC = "As a freelancer developed 5+ applications.";
 
 
   //AboutMe Section
@@ -49,7 +50,7 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of rest API development and its integration approaches. Having knowledge in flutter testing and app automation.";
+      "Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of Rest API development and its integration approaches. Learned and practiced flutter testing and app automation.";
 
   static const String CREATIVE_DESIGN = "Need Mobile application with Innovative UI?";
   static const String HELP = "I can Help You!";
@@ -63,7 +64,7 @@ class StringConst {
   static const String SKILLS_TITLE_1 = "What My Design & Development";
   static const String SKILLS_TITLE_2 = "Skills Include";
   static const String SKILLS_DESC =
-      "These are my highlighted skills that strongly essential in the Mobile application development.Strong Problem solving ability and logical thinking.";
+      "These are all my highlighted skills that strongly essential in the Software development. Strong Problem solving ability and logical thinking.";
   static const String SKILLS_1 = "Flutter";
   static const String SKILLS_1_DESC =
       "Having well knowledge in mobile app development using flutter";
@@ -87,11 +88,11 @@ class StringConst {
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";
-  static const int HAPPY_CLIENTS_NUM = 11;
+  static const int HAPPY_CLIENTS_NUM = 13;
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
-  static const int YEARS_OF_EXPERIENCE_NUM = 4;
+  static const int YEARS_OF_EXPERIENCE_NUM = 5;
   static const String INCREDIBLE_PROJECTS = "Incredible Projects";
-  static const int INCREDIBLE_PROJECTS_NUM = 14;
+  static const int INCREDIBLE_PROJECTS_NUM = 15;
   static const String AWARD_WINNING = "Award Winning";
   static const String AWARD_WINNING_NUM = "18";
 
@@ -99,7 +100,7 @@ class StringConst {
   static const String MEET_MY_PROJECTS = "Meet My Projects";
   static const String MY_WORKS = "my works";
   static const String PROJECTS_DESC =
-      "Prototyping and Strong design patternsin mobile applications. Implement pixel-perfect UI designs. Implemented comprehensive project management methodologies to drive successful product launches, resulting in a 30% increase in revenue. Implemented the MVC pattern to streamline code structure, resulting in 40% faster load times and improved scalability for future enhancements. Implemented Code re-usability via widgets customization in all projects. Effective State management by BLOC Pattern, GETX and MobX. Upgraded Exception Handling that reduces 60 - 70% bugs.Having work experience in Inventory management and Employee management applications.As a senior mobile app developer able to orchestrating product based on  the requirements and willingness to provide effective solution for software problems. Taking ownership of given projects and ensure on time delivery. Experienced in current projects phases using Agile methodologies. Projects are following on";
+      "Worked on projects in following categories: projects in the following categories like Ecommerce, Inventory, Employee management, Finance and Garage management.\nIn these projects I have the responsibilities to Prototyping and maintaining strong design patterns, Implement pixel-perfect UI designs. Implement comprehensive project management methodologies to drive successful product launches, resulting in a 30% increase in revenue, Implement the MVC pattern to streamline code structure, resulting in 40% faster load times and improved scalability for future enhancements. Implement Code re-usability via widgets customization.\nUsed State management techniques: BLOC Pattern, GETX and RiverPod.\nAs a senior mobile app developer able to orchestrating product based on  the requirements and willingness to provide effective solution for software problems. Taking ownership of given projects and ensure on time delivery. Experienced in current projects phases using Agile methodologies. Projects are following on";
   static const String ALL_PROJECTS = "All Projects";
   static const String ALL = "All";
   static const String ECOMMERCE = "Ecommerce";
@@ -178,7 +179,7 @@ class StringConst {
   static const String MAIL_ME = "Mail Me";
   static const String FOLLOW_ME_2 = "Follow Me";
   static const String FOLLOW_ME_2_URL = "behance.net/nimbus2000";
-  static const String RIGHTS_RESERVED = "© 2023 All rights reserved";
+  static const String RIGHTS_RESERVED = "© 2024 All rights reserved";
   static const String BUILT_BY = "Built with Flutter by";
   static const String DAVID_COBBINA = "Shahul hameed";
   static const String DESIGNED_BY = "Designed by";

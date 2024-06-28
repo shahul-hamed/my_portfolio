@@ -272,7 +272,9 @@ class _FooterSectionState extends State<FooterSection> {
                   NimbusButton(
                     buttonTitle: StringConst.HIRE_ME,
                     buttonColor: AppColors.primaryColor,
-                    onPressed: () {},
+                    onPressed: () {
+                      openUrlLink(StringConst.EMAIL_URL);
+                    },
                   ),
                   SpaceH80(),
                 ],
