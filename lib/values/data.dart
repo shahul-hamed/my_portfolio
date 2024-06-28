@@ -146,9 +146,10 @@ class Data {
     ProjectCategoryData(title: StringConst.ALL, number: 8, isSelected: true),
     ProjectCategoryData(title: StringConst.ECOMMERCE, number: 2),
     ProjectCategoryData(title: StringConst.HEALTH_CARE, number: 1),
-    ProjectCategoryData(title: StringConst.INVENTORY, number: 1),
+    ProjectCategoryData(title: StringConst.INVENTORY, number: 2),
     // ProjectCategoryData(title: StringConst.ACCOUNTS, number: 1),
     ProjectCategoryData(title: StringConst.FMS, number: 1),
+    ProjectCategoryData(title: StringConst.EVENT_MANAGEMENT, number: 1),
     ProjectCategoryData(title: StringConst.FREELANCE, number: 3),
 
   ];
@@ -239,16 +240,23 @@ class Data {
     //   width: 0.3,
     // ),
     ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
+      title: StringConst.PORTFOLIO_3_TITLE,
       category: StringConst.FMS,
+      projectCoverUrl: ImagePath.PORTFOLIO_3,
+      width: 0.3,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_4_TITLE,
+      category: StringConst.INVENTORY,
       projectCoverUrl: ImagePath.PORTFOLIO_4,
       width: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.INVENTORY,
+      category: StringConst.FREELANCE,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
       width: 0.3,
+      // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_6_TITLE,
@@ -259,22 +267,36 @@ class Data {
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_7_TITLE,
-      category: StringConst.FREELANCE,
+      category: StringConst.HEALTH_CARE,
       projectCoverUrl: ImagePath.PORTFOLIO_7,
       width: 0.3,
       // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_8_TITLE,
-      category: StringConst.HEALTH_CARE,
+      category: StringConst.FREELANCE,
       projectCoverUrl: ImagePath.PORTFOLIO_8,
       width: 0.3,
       // mobileHeight: 0.3,
     ),
     ProjectData(
       title: StringConst.PORTFOLIO_9_TITLE,
+      category: StringConst.INVENTORY,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.3,
+      // mobileHeight: 0.3,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_10_TITLE,
+      category: StringConst.EVENT_MANAGEMENT,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.3,
+      // mobileHeight: 0.3,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_11_TITLE,
       category: StringConst.FREELANCE,
-      projectCoverUrl: ImagePath.PORTFOLIO_9,
+      projectCoverUrl: ImagePath.PORTFOLIO_11,
       width: 0.3,
       // mobileHeight: 0.3,
     ),
@@ -309,6 +331,22 @@ class Data {
       width: 0.5,
       mobileHeight: 0.3,
     ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_10_TITLE,
+      category: StringConst.INVENTORY,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.5,
+      mobileHeight: 0.3,
+    ),
+  ];
+  static List<ProjectData> eventManagement = [
+    ProjectData(
+      title: StringConst.PORTFOLIO_11_TITLE,
+      category: StringConst.EVENT_MANAGEMENT,
+      projectCoverUrl: ImagePath.PORTFOLIO_5,
+      width: 0.5,
+      mobileHeight: 0.3,
+    ),
   ];
   static List<ProjectData> fms = [
     ProjectData(
@@ -334,7 +372,13 @@ class Data {
     ProjectData(
       title: StringConst.PORTFOLIO_9_TITLE,
       category: StringConst.FREELANCE,
-      projectCoverUrl: ImagePath.PORTFOLIO_9,
+      projectCoverUrl: ImagePath.PORTFOLIO_8,
+      width: 0.225,
+    ),
+    ProjectData(
+      title: StringConst.PORTFOLIO_11_TITLE,
+      category: StringConst.FREELANCE,
+      projectCoverUrl: ImagePath.PORTFOLIO_11,
       width: 0.225,
     ),
   ];

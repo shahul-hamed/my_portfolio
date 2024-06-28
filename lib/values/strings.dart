@@ -106,18 +106,21 @@ class StringConst {
   static const String ECOMMERCE = "Ecommerce";
   static const String INVENTORY = "Inventory";
   static const String HEALTH_CARE = "Heath care";
+  static const String EVENT_MANAGEMENT = "Event management";
   static const String FMS = "Employee management";
   static const String FREELANCE = "Freelance";
   static const String ACCOUNTS = "Accounts & Trading";
   static const String PORTFOLIO_1_TITLE = "Engaje commerce";
   static const String PORTFOLIO_2_TITLE = "Nearle Commerce";
-  static const String PORTFOLIO_3_TITLE = "Investmates";
-  static const String PORTFOLIO_4_TITLE = "Geco";
-  static const String PORTFOLIO_5_TITLE = "Lightning 360";
-  static const String PORTFOLIO_8_TITLE = "Psycare online";
-  static const String PORTFOLIO_6_TITLE = "Finance";
-  static const String PORTFOLIO_7_TITLE = "Haqtoo Tracking";
-  static const String PORTFOLIO_9_TITLE = "HOC";
+  static const String PORTFOLIO_3_TITLE = "Geco";
+  static const String PORTFOLIO_4_TITLE = "Lightning 360";
+  static const String PORTFOLIO_7_TITLE = "Psycare online";
+  static const String PORTFOLIO_5_TITLE = "Finance";
+  static const String PORTFOLIO_6_TITLE = "Haqtoo Tracking";
+  static const String PORTFOLIO_8_TITLE = "HOC";
+  static const String PORTFOLIO_9_TITLE = "Garage management";
+  static const String PORTFOLIO_10_TITLE = "Event Go Here";
+  static const String PORTFOLIO_11_TITLE = "C-KYC";
 
   //Awards & Section
   static const String MY = "My";

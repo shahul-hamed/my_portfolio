@@ -41,6 +41,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
     Data.health,
     Data.inventory,
     Data.fms,
+    Data.eventManagement,
     Data.freelance,
   ];
   late List<ProjectData> selectedProject;
