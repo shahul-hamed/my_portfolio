@@ -1,7 +1,7 @@
 # portfolio
 
 <h1 align="center">
-  <a href="https://david-legend.github.io/nimbus/" target="_blank">https://github.com/shahul-hamed/my_portfolio/</a>
+  <a href="https://shahul-hamed.github.io/portfolio/" target="_blank">https://github.com/shahul-hamed/my_portfolio/</a>
 </h1>
 
 <p align="center">

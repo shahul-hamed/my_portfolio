@@ -42,7 +42,7 @@ class NavSectionMobile extends StatelessWidget {
                 //   height: Sizes.HEIGHT_52,
                 // ),
                 // SizedBox(width: Sizes.WIDTH_10,),
-                Text(StringConst.BIO,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),)
+                Text(StringConst.BIOMobile,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),)
               ],
             ),
           ),

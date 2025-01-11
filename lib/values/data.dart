@@ -65,6 +65,14 @@ class Data {
       level: 90,
     ),
     SkillLevelData(
+      skill: StringConst.SKILLS_2,
+      level: 90,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_3,
+      level: 95,
+    ),
+    SkillLevelData(
       skill: StringConst.SKILLS_6,
       level: 85,
     ),
@@ -73,21 +81,17 @@ class Data {
       level: 85,
     ),
     SkillLevelData(
-      skill: StringConst.SKILLS_2,
-      level: 60,
-    ),
-    SkillLevelData(
-      skill: StringConst.SKILLS_3,
-      level: 50,
-    ),
-    SkillLevelData(
       skill: StringConst.SKILLS_5,
-      level: 45,
+      level: 85,
     ),
-    // SkillLevelData(
-    //   skill: StringConst.SKILLS_7,
-    //   level: 35,
-    // ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_6,
+      level: 75,
+    ),
+    SkillLevelData(
+      skill: StringConst.SKILLS_7,
+      level: 90,
+    ),
   ];
 
   static List<SkillCardData> skillCardData = [

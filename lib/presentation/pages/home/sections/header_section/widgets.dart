@@ -121,8 +121,8 @@ List<Widget> buildCardRow({
         width: width,
         height: responsiveSize(
           context,
-          125,
           135,
+          145,
         ),
         hasAnimation: hasAnimation,
         leading: CircularContainer(

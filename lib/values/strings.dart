@@ -23,10 +23,11 @@ class StringConst {
   static const String FULL_NAME = "Shahul hameed J";
   static const String INTRO = "Hi! I'm Shahul hameed -";
   static const String POSITION = "Flutter Developer";
-  static const String BIO = "Flutter | Golang | Jenkins";
+  static const String BIO = "Expertise in Flutter | Proficient in Dart";
+  static const String BIOMobile = "Expertise in Flutter";
   static const String ABOUT_DEV =
       // "Flutter developer with 4+ years of experience in Software development. Developed 8+ mobile applications including Android, IOS and Web. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. Expertise in cross platform mobile application development as well as web application development.";
-     "Flutter developer with 5 years of experience in Software development. Developed 8+ mobile applications 2+ web applications, spearheaded to 4+ projects. Willingness to take on added responsibilities to meet team goals. Ability to handle multiple projects simultaneously with a high degree of accuracy. an expert in cross platform mobile application development as well as web application development.";
+     "As a passionate Flutter Developer with over 5 years of hands-on experience, I specialize in creating high-performance, scalable, and visually appealing mobile applications. My journey in mobile app development began with a strong focus on cross-platform solutions, and since then, I have become proficient in Flutter, building seamless, responsive apps for both Android and iOS platforms.";
   static const String ABOUT_ME_1 =
       "Senior flutter developer working in software development field for";
   static const String ABOUT_ME_2 =
@@ -38,11 +39,11 @@ class StringConst {
   static const String BEHANCE_ID = "www.linkedin.com/in/shahul-hameed-j";
   static const String HIRE_ME_NOW = "Hire Me Now";
   static const String UI = "Flutter Developer";
-  static const String UI_DESC = "Create pixel perfect UI mobile apps with strong design pattern";
+  static const String UI_DESC = "Specialize in creating high-performance, cross-platform mobile applications.";
   static const String BACKEND_DEV = "Golang Newcomer";
   static const String BACKEND_DEV_DESC = "Able to create simple REST API using Go language";
   static const String FREELANCER = "Freelancer";
-  static const String FREELANCER_DESC = "As a freelancer developed 5+ applications.";
+  static const String FREELANCER_DESC = "Hire me as a freelancer.";
 
 
   //AboutMe Section
@@ -50,7 +51,12 @@ class StringConst {
   static const String THERE = "There!";
   static const String ABOUT_ME = "about me";
   static const String ABOUT_ME_DESC =
-      "Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of Rest API development and its integration approaches. Learned and practiced flutter testing and app automation.";
+      // "Proven ability to leverage the full-stack knowledge and experience to build interactive and user centered mobile application designs. Extensive expertise in clean architecture management and life cycle of Rest API development and its integration approaches. Learned and practiced flutter testing and app automation.";
+  "As a skilled Flutter Developer with over 5 years of experience, I specialize in creating high-performance, cross-platform mobile applications that provide seamless and intuitive user experiences. Whether you're looking to build a new mobile app or enhance an existing one, I can help you bring your ideas to life with modern, clean, and innovative UI designs using Flutter. \n With strong expertise in state management, UI/UX design, and API integration, I can help you create a mobile app that not only looks great but works flawlessly. If you’re ready to develop an innovative mobile app that stands out in today’s competitive market, I’d love to collaborate and make it happen.";
+  //     "My expertise spans a wide range of development areas, including:\n Custom Flutter UI/UX Development: Crafting intuitive, pixel-perfect user interfaces that offer a delightful and consistent experience across devices.\n State Management: Mastery in various state management techniques such as Provider, Riverpod, Bloc, and Redux to ensure smooth data flow and maintainable code architecture.\n API Integrations: Expertise in integrating RESTful APIs, GraphQL, Firebase, Push Notifications, and third-party services such as Stripe and Google Maps, allowing me to build feature-rich, real-time applications.\n Performance Optimization: Skilled in debugging, profiling, and optimizing app performance to ensure apps run efficiently and consume minimal resources."
+  // +"\n \bCross-Platform Expertise: Leveraging the power of Flutter’s single codebase to deliver seamless experiences for both Android and iOS, saving time and resources while ensuring high-quality apps."
+  // +"\n Agile Development: Extensive experience in agile workflows and collaborative environments, utilizing tools like Git, Jira, and Slack to work effectively in cross-functional teams."
+  // +"\n Continuous Learning & Innovation: Staying updated with the latest Flutter updates, packages, and mobile development trends, ensuring that my apps incorporate the best practices and technologies.";
 
   static const String CREATIVE_DESIGN = "Need Mobile application with Innovative UI?";
   static const String HELP = "I can Help You!";
@@ -65,26 +71,26 @@ class StringConst {
   static const String SKILLS_TITLE_2 = "Skills Include";
   static const String SKILLS_DESC =
       "These are all my highlighted skills that strongly essential in the Software development. Strong Problem solving ability and logical thinking.";
-  static const String SKILLS_1 = "Flutter";
+  static const String SKILLS_1 = "Flutter & Dart Expertise";
   static const String SKILLS_1_DESC =
-      "Having well knowledge in mobile app development using flutter";
-  static const String SKILLS_2 = "AngularDart";
+      "Proficient in building high-performance, responsive cross-platform apps with Flutter for both iOS and Android.";
+  static const String SKILLS_2 = "State Management";
   static const String SKILLS_2_DESC =
-      "Worked on the ecommerce web application using angulardart";
-  static const String SKILLS_3 = "CodeIgniter";
+      "Deep experience in using Provider,Bloc,Riverpod and GetX for managing state in Flutter applications.";
+  static const String SKILLS_3 = "UI/UX Design & Customization";
   static const String SKILLS_3_DESC =
-      "2 years back worked on the delivery site using codeigniter";
-  static const String SKILLS_4 = "Firebase";
+      "Expertise in creating stunning, responsive, and intuitive UIs using Flutter widgets, Material Design components, and Cupertino widgets.\n Experience in creating complex designs and smooth transitions to improve user experience and engagement.";
+  static const String SKILLS_4 = "Integration & Backend";
   static const String SKILLS_4_DESC =
-      "Used firebase for FCM notifications and authentication also";
-  static const String SKILLS_5 = "CICD";
-  static const String SKILLS_7 = "React";
-  static const String SKILLS_7_DESC = "Contributed react admin panel for managing RBAC controls";
+      "Advanced skills in integrating RESTful APIs, GraphQL, and third-party services to fetch and send data.\n Experience in using Firebase for authentication, real-time database, push notifications, cloud storage, and cloud functions.\n Proficiency in integrating Stripe, Razorpay, or other payment services into Flutter applications.";
+  static const String SKILLS_5 = "Performance & Debugging";
+  static const String SKILLS_7 = "Version Control & Collaboration";
+  static const String SKILLS_7_DESC = "Extensive experience using Git for version control, managing code repositories, and collaborating in teams.\n Experience working in Agile environments, following Scrum or Kanban methodologies for project management and team collaboration.";
   static const String SKILLS_5_DESC =
-      "Know the flutter app automation using Jenkins";
-  static const String SKILLS_6 = "Git";
+      "Expertise in profiling, debugging, and optimizing Flutter apps for performance, including memory management and reducing app size.\n Handling complex error states and ensuring robust crash reporting and debugging using tools like Firebase Crashlytics.";
+  static const String SKILLS_6 = "Testing & Continuous Integration";
   static const String SKILLS_6_DESC =
-      "Day to day project I'm using Git to code repository management for Development and Staging environments";
+      "Proficient in writing unit and widget tests using Flutter's testing framework, ensuring the stability of applications.\n Experience with integration tests to simulate real user interactions and ensure full functionality of the app.\n Knowledge of setting up Continuous Integration and Continuous Deployment (CI/CD) pipelines using GitHub Actions, Semaphore, or Jenkins for efficient app delivery.";
 
   //Stats Section
   static const String HAPPY_CLIENTS = "Happy Clients";

@@ -76,14 +76,14 @@ class _SkillsSectionState extends State<SkillsSection>
                       child: _buildNimbusSm(width: contentAreaWidthSm),
                     ),
                     SpaceH40(),
-                    ContentArea(
-                      width: contentAreaWidthSm,
-                      child: Center(
-                        child: Column(
-                          children: _buildBoxesSm(Data.skillCardData),
-                        ),
-                      ),
-                    ),
+                    // ContentArea(
+                    //   width: contentAreaWidthSm,
+                    //   child: Center(
+                    //     child: Column(
+                    //       children: _buildBoxesSm(Data.skillCardData),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -106,12 +106,12 @@ class _SkillsSectionState extends State<SkillsSection>
                       child: _buildNimbusSm(width: contentAreaWidthSm),
                     ),
                     SpaceH40(),
-                    ContentArea(
-                      width: contentAreaWidthSm,
-                      child: Center(
-                        child: _buildSkillBoxes(boxHeight: 300),
-                      ),
-                    ),
+                    // ContentArea(
+                    //   width: contentAreaWidthSm,
+                    //   child: Center(
+                    //     child: _buildSkillBoxes(boxHeight: 350),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -132,18 +132,18 @@ class _SkillsSectionState extends State<SkillsSection>
                       width: contentAreaWidthLg,
                       child: _buildNimbusLg(width: contentAreaWidthLg),
                     ),
-                    ContentArea(
-                      width: contentAreaWidthLg,
-                      height: contentAreaHeight,
-                      padding:
-                          EdgeInsets.symmetric(horizontal: Sizes.HEIGHT_48),
-                      child: Center(
-                        child: _buildSkillBoxes(
-                          boxHeight: 300,
-                          crossAxisCount: 2,
-                        ),
-                      ),
-                    ),
+                    // ContentArea(
+                    //   width: contentAreaWidthLg,
+                    //   height: contentAreaHeight,
+                    //   padding:
+                    //       EdgeInsets.symmetric(horizontal: Sizes.HEIGHT_48),
+                    //   child: Center(
+                    //     child: _buildSkillBoxes(
+                    //       boxHeight: 350,
+                    //       crossAxisCount: 2,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
